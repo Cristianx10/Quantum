@@ -27,7 +27,7 @@ public class playerController : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         anim.SetBool("Grounded", isGrounded);
 
-        if(Input.GetKeyUp(KeyCode.UpArrow) && isGrounded){
+        if(Input.GetKeyDown(KeyCode.UpArrow) && isGrounded){
             jump = true;
         }
 
