@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody2D rb;
     private Animator anim;
 
-    private bool isGrounded;
+    public bool isGrounded;
     public float speed = 24f;
     public float maxSpeed = 6f;
-    bool jump = false;
+    public bool jump = false;
     public float jumpForce = 7f;
 
     // Start is called before the first frame update
@@ -35,6 +35,16 @@ public class playerController : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        //Friccion
+
+        if(isGrounded){
+            Vector3 fixedVelocity = rb.velocity;
+            fixedVelocity.x *= 0.9f;
+            rb.velocity = fixedVelocity;
+        }
+
+
         float h = Input.GetAxis("Horizontal");
 
         rb.AddForce(Vector2.right * speed * h);
@@ -57,20 +67,5 @@ public class playerController : MonoBehaviour
         }
     }
 
-    void OnCollisionStay2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "ground")
-        {
-            isGrounded = true;
-            jump = false;
-        }
-    }
-
-    void OnCollisionExit2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "ground")
-        {
-            isGrounded = false;
-        }
-    }
+  
 }
