@@ -35,4 +35,9 @@ public class CheckGrounded : MonoBehaviour
             player.isGrounded = false;
         }
     }
+
+    
+    void OnBecameInvisible(){
+        player.transform.position = new Vector3(0,0,0);
+    }
 }
