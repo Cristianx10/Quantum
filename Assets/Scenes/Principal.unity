@@ -433,8 +433,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801752964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.165, y: 0.564, z: -1.0907702}
-  m_LocalScale: {x: 3.5275617, y: 4.454814, z: 1}
+  m_LocalPosition: {x: -0.006, y: 4.408, z: -1.0907702}
+  m_LocalScale: {x: 17.845934, y: 2.7397106, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -597,6 +597,8 @@ MonoBehaviour:
   maxSpeed: 6
   jump: 0
   jumpForce: 7
+  gravedad: 9.8
+  orientacionY: 1
 --- !u!70 &1302466533
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -628,7 +630,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -643,7 +645,7 @@ Transform:
   m_GameObject: {fileID: 1302466531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: -1, z: 1}
   m_Children:
   - {fileID: 196690046}
   m_Father: {fileID: 0}
