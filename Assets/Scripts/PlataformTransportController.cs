@@ -5,20 +5,25 @@ using UnityEngine;
 public class PlataformTransportController : MonoBehaviour
 {
 
-    public PlayerController player;
+    public ArrayList players;
     public PlataformTransport from;
     public PlataformTransport to;
 
     void Start()
     {
-        GameObject gameObjectPlayer = GameObject.FindGameObjectWithTag("Player");
-        player = gameObjectPlayer.GetComponent<PlayerController>();
+        GameObject[] gameObjectsPlayer = GameObject.FindGameObjectsWithTag("Player");
+        players = new ArrayList();
+        foreach (var gameObjectPlayer in gameObjectsPlayer)
+        {
+            PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
+            players.Add(player);
+        }
 
     }
 
     public void AsignarPosiciones()
     {
-    
+
         from.target = to;
         to.target = from;
     }

@@ -6,7 +6,7 @@ public class PlataformTransport : MonoBehaviour
 {
 
     private PlataformTransportController ptc;
-    private PlayerController player;
+    private ArrayList players;
     public Vector3 initPosition;
     public PlataformTransport target;
 
@@ -17,7 +17,7 @@ public class PlataformTransport : MonoBehaviour
     {
         initPosition = transform.position;
         ptc = GetComponentInParent<PlataformTransportController>();
-        player = ptc.player;
+        players = ptc.players;
 
         if (ptc.from == null)
         {
@@ -49,7 +49,7 @@ public class PlataformTransport : MonoBehaviour
         {
             active = false;
             target.active = false;
-            player.transform.position = target.transform.position;
+            col.gameObject.transform.position = target.transform.position;
             StartCoroutine(Reset());
         }
     }
