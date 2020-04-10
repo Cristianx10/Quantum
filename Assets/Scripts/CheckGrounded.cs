@@ -23,6 +23,7 @@ public class CheckGrounded : MonoBehaviour
         else if (col.gameObject.tag == "Player")
         {
             player.isGrounded = true;
+            player.touchPlayer = true;
             player.jump = false;
         }
     }
@@ -36,6 +37,7 @@ public class CheckGrounded : MonoBehaviour
         else if (col.gameObject.tag == "Player")
         {
             player.isGrounded = false;
+            player.touchPlayer = false;
         }
     }
 

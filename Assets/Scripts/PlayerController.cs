@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     float temOrientacion = 0;
 
     public bool colliderWall = false;
+    public bool touchPlayer = false;
 
 
     Vector3 vLeft = Vector2.left;
@@ -168,62 +169,84 @@ public class PlayerController : MonoBehaviour
                 var distance = heading.magnitude;
                 var direction = heading / distance; // This is now the normalized direction.
 
-
-                if (heading.sqrMagnitude < maxRange * maxRange)
+                if (!isChangeOrientationMove)
                 {
-                    //  orientacionY *= -1;
 
 
-                    if ((colliderWall && player.colliderWall) || (isGrounded && player.isGrounded && orientacion != 1))
+                    if (heading.sqrMagnitude < maxRange * maxRange)
                     {
+                        //  orientacionY *= -1;
 
-                        if (direction.y >= .9)
+                        if (!touchPlayer)
                         {
-                            orientacion = 3;
+
+
+                            if (colliderWall && !player.colliderWall && !isGrounded && player.isGrounded)
+                            {
+                                if (direction.y >= .9)
+                                {
+                                    orientacion = 3; isChangeOrientationMove = true;
+                                }
+                                else if (direction.y < -.9)
+                                {
+                                    orientacion = 1; isChangeOrientationMove = true;
+                                }
+                            }
+
+                            if (colliderWall && player.colliderWall)
+                            {
+
+                                if (direction.x >= .9)
+                                {
+                                    orientacion = 4; isChangeOrientationMove = true;
+                                }
+                                else if (direction.x < -.9)
+                                {
+                                    orientacion = 2; isChangeOrientationMove = true;
+                                }
+
+                            }
                         }
-                        else if (direction.y < -.9)
+                        else
                         {
                             orientacion = 1;
                         }
 
-                        if (direction.x >= .9)
-                        {
-                            orientacion = 4;
-                        }
-                        else if (direction.x < -.9)
-                        {
-                            orientacion = 2;
-                        }
-
-                    }
-                    else if (orientacion == 1)
-                    {
                         rb.AddForce(direction * attractiveForce);
+
+
+                        StartCoroutine(Reset());
                     }
                     else
                     {
+                        colliderWall = false;
+
                         orientacion = 1;
                     }
                 }
-                else
-                {
-                    colliderWall = false;
-                    orientacion = 1;
-                }
-
 
             }
 
             if (temOrientacion != orientacion)
             {
                 temOrientacion = orientacion;
-                //rb.velocity = new Vector3(0, 0, 0);
+                rb.velocity = new Vector3(0, 0, 0);
                 moveLeft = false;
                 moveRight = false;
+                jump = false;
             }
 
         }
     }
+
+    bool isChangeOrientationMove = false;
+
+    IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(2);
+        isChangeOrientationMove = false;
+    }
+
 
     void ConfigOrientation()
     {
