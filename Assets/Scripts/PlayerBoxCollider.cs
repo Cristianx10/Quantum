@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckGrounded : MonoBehaviour
+public class PlayerBoxCollider : MonoBehaviour
 {
 
     private PlayerController player;
@@ -17,13 +17,7 @@ public class CheckGrounded : MonoBehaviour
     {
         if (col.gameObject.tag == "ground")
         {
-            player.isGrounded = true;
-            player.jump = false;
-        }
-        else if (col.gameObject.tag == "Player")
-        {
-            player.isGrounded = true;
-            player.jump = false;
+            player.colliderWall = true;
         }
     }
 
@@ -31,17 +25,7 @@ public class CheckGrounded : MonoBehaviour
     {
         if (col.gameObject.tag == "ground")
         {
-            player.isGrounded = false;
+        player.colliderWall = false;
         }
-        else if (col.gameObject.tag == "Player")
-        {
-            player.isGrounded = false;
-        }
-    }
-
-
-    void OnBecameInvisible()
-    {
-        player.transform.position = new Vector3(0, 0, 0);
     }
 }

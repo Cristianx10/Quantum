@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
 
     float temOrientacion = 0;
 
+    public bool colliderWall = false;
+
 
     Vector3 vLeft = Vector2.left;
     Vector3 vRight = Vector2.right;
@@ -135,6 +137,8 @@ public class PlayerController : MonoBehaviour
         MoveHorizontalForce();
         // MoveHorizontal();
 
+        MagnetismoPlayers(false);
+
 
         if (jump)
         {
@@ -143,8 +147,12 @@ public class PlayerController : MonoBehaviour
             jump = false;
         }
 
-     
+    }
 
+
+
+    void MagnetismoPlayers(bool changeOrientation)
+    {
         foreach (var playerObject in players)
         {
             PlayerController player = (PlayerController)playerObject;
@@ -164,29 +172,43 @@ public class PlayerController : MonoBehaviour
                 if (heading.sqrMagnitude < maxRange * maxRange)
                 {
                     //  orientacionY *= -1;
-                    //rb.AddForce(direction * attractiveForce);
 
 
-                    if (direction.y >= .9)
+                    if ((colliderWall && player.colliderWall) || (isGrounded && player.isGrounded && orientacion != 1))
                     {
-                        orientacion = 3;
+
+                        if (direction.y >= .9)
+                        {
+                            orientacion = 3;
+                        }
+                        else if (direction.y < -.9)
+                        {
+                            orientacion = 1;
+                        }
+
+                        if (direction.x >= .9)
+                        {
+                            orientacion = 4;
+                        }
+                        else if (direction.x < -.9)
+                        {
+                            orientacion = 2;
+                        }
+
                     }
-                    else if (direction.y < -.9)
+                    else if (orientacion == 1)
+                    {
+                        rb.AddForce(direction * attractiveForce);
+                    }
+                    else
                     {
                         orientacion = 1;
                     }
-
-                    if (direction.x >= .9)
-                    {
-                        orientacion = 4;
-                    }
-                    else if (direction.x < -.9)
-                    {
-                        orientacion = 2;
-                    }
-
-                }else{
-                       orientacion = 1;
+                }
+                else
+                {
+                    colliderWall = false;
+                    orientacion = 1;
                 }
 
 
@@ -195,13 +217,12 @@ public class PlayerController : MonoBehaviour
             if (temOrientacion != orientacion)
             {
                 temOrientacion = orientacion;
-                rb.velocity = new Vector3(0, 0, 0);
+                //rb.velocity = new Vector3(0, 0, 0);
+                moveLeft = false;
+                moveRight = false;
             }
 
         }
-
-
-
     }
 
     void ConfigOrientation()
@@ -335,6 +356,9 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
+
+
 
 
 }

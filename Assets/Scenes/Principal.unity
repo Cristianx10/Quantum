@@ -480,21 +480,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
-        type: 3}
-      propertyPath: jumpForce
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
-        type: 3}
-      propertyPath: typePlayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
-        type: 3}
-      propertyPath: orientacion
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f403285dbec2c16489fe735cb99ed604, type: 3}
 --- !u!1 &2053616371
@@ -696,12 +681,12 @@ PrefabInstance:
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.31
+      value: -1.63
       objectReference: {fileID: 0}
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.9
+      value: -2.58
       objectReference: {fileID: 0}
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
@@ -748,29 +733,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: typePlayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
-        type: 3}
-      propertyPath: jumpForce
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
-        type: 3}
-      propertyPath: maxSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
-        type: 3}
-      propertyPath: orientacion
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
