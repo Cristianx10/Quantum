@@ -44,6 +44,6 @@ public class CheckGrounded : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        player.transform.position = new Vector3(0, 0, 0);
+        player.transform.position = new Vector3(13, -2 , 0);
     }
 }
