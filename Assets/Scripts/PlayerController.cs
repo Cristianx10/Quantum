@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     private ArrayList players;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Animator anim;
 
     public bool isGrounded;
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     bool moveLeft, moveRight = false;
     public float typePlayer = 0;
 
-    float attractiveForce = 5;
+    public float attractiveForce = 5;
     public float attractiveDistance = 3;
 
     float temOrientacion = 0;
@@ -211,16 +211,18 @@ public class PlayerController : MonoBehaviour
                         {
                             orientacion = 1;
                         }
-
-                        rb.AddForce(direction * attractiveForce);
+                        
+                        if(direction != null){
+                            rb.AddForce(direction * attractiveForce);
+                        }
 
 
                         StartCoroutine(Reset());
                     }
                     else
                     {
+                        isChangeOrientationMove = false;
                         colliderWall = false;
-
                         orientacion = 1;
                     }
                 }
