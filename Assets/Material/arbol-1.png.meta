@@ -1,0 +1,931 @@
+fileFormatVersion: 2
+guid: b681cb19e197e134fbd8dcc65b68063f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1020380752713000622
+    second: arbol-1_0
+  - first:
+      213: 8551704263134990388
+    second: arbol-1_1
+  - first:
+      213: 3893741053077286375
+    second: arbol-1_2
+  - first:
+      213: 4826640331487278677
+    second: arbol-1_3
+  - first:
+      213: -756307078217366462
+    second: arbol-1_4
+  - first:
+      213: -4267962650453446115
+    second: arbol-1_5
+  - first:
+      213: -3034311626279972547
+    second: arbol-1_6
+  - first:
+      213: -5424372023636143556
+    second: arbol-1_7
+  - first:
+      213: 2947050283274227768
+    second: arbol-1_8
+  - first:
+      213: 2001198933747481057
+    second: arbol-1_9
+  - first:
+      213: 6141684641464849196
+    second: arbol-1_10
+  - first:
+      213: 4719773517097627885
+    second: arbol-1_11
+  - first:
+      213: 5130969889644865118
+    second: arbol-1_12
+  - first:
+      213: -6674277665317915757
+    second: arbol-1_13
+  - first:
+      213: -3188333846117143794
+    second: arbol-1_14
+  - first:
+      213: -690369903477423595
+    second: arbol-1_15
+  - first:
+      213: -652763766401622619
+    second: arbol-1_16
+  - first:
+      213: 1954884533706729628
+    second: arbol-1_17
+  - first:
+      213: -3605365684826554184
+    second: arbol-1_18
+  - first:
+      213: 4309780003616073185
+    second: arbol-1_19
+  - first:
+      213: 6939325401444513010
+    second: arbol-1_20
+  - first:
+      213: -1012049103806812276
+    second: arbol-1_21
+  - first:
+      213: -5640073494931452868
+    second: arbol-1_22
+  - first:
+      213: 7393090629427444696
+    second: arbol-1_23
+  - first:
+      213: 5482584545718274427
+    second: arbol-1_24
+  - first:
+      213: 4366619325885321527
+    second: arbol-1_25
+  - first:
+      213: 1794639016859561966
+    second: arbol-1_26
+  - first:
+      213: 6549865160918669957
+    second: arbol-1_27
+  - first:
+      213: -1119891718602173874
+    second: arbol-1_28
+  - first:
+      213: -7945537760921275298
+    second: arbol-1_29
+  - first:
+      213: 3552711480876100187
+    second: arbol-1_30
+  - first:
+      213: -1997234092727192906
+    second: arbol-1_31
+  - first:
+      213: -868737851410026425
+    second: arbol-1_32
+  - first:
+      213: 7820834828994692587
+    second: arbol-1_33
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arbol-1_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac962928becbc94ab9ca740508185c7
+      internalID: 1020380752713000622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7172bde34ed85ba4f8dbfe9f5e7fa567
+      internalID: 8551704263134990388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_2
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4744d09f8ee61478f1969883ff818d
+      internalID: 3893741053077286375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_3
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f643554110c3b644e81a83996a6c38b9
+      internalID: 4826640331487278677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_4
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd21a30336d9dd408be184da54b9288
+      internalID: -756307078217366462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_5
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb7d20ad6a152842ad55090b407d2b3
+      internalID: -4267962650453446115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_6
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dae30b86aa7cfe4ea1234f1ea432538
+      internalID: -3034311626279972547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_7
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee880393b01a254d8bfac8433cad347
+      internalID: -5424372023636143556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_8
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c636dfa9006541240a6a4c4ba9cdba05
+      internalID: 2947050283274227768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_9
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a99181f60afa54791f6ea42f582e2a
+      internalID: 2001198933747481057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_10
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed54211d6c0dfd5489858f9f0f7edf4e
+      internalID: 6141684641464849196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_11
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377df72ec54af234b8f765e7d6d9f62d
+      internalID: 4719773517097627885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_12
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a7c0dc6a444fe4c97b55f6ec5454e0
+      internalID: 5130969889644865118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_13
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736fed1b1b8678f47b4d6598a6ebb637
+      internalID: -6674277665317915757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_14
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b601747fbd7c647b72b1b6caddb84c
+      internalID: -3188333846117143794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_15
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 1966
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe1cc46413e92c4db990c94ff31c5f9
+      internalID: -690369903477423595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_16
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03c80b513f18f242b28923585951035
+      internalID: -652763766401622619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_17
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d836924c960404086ff664c955b78f
+      internalID: 1954884533706729628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_18
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acfc43ce8b095f428cc811faf04f4ab
+      internalID: -3605365684826554184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_19
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e74adff9919374ea236188be378212
+      internalID: 4309780003616073185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_20
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53c3c3dc1e0e804fa238e85c5ae65df
+      internalID: 6939325401444513010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_21
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8475745b4099fd04abbe511ceb5d7fb8
+      internalID: -1012049103806812276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_22
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de40bc6b812e16740bf3c093c31114e4
+      internalID: -5640073494931452868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_23
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0bc6f044bbc02c4ab0c2a25b66711ea
+      internalID: 7393090629427444696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_24
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e508701ab3b2d843bfe39b31b843206
+      internalID: 5482584545718274427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_25
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cd8b350c1a03644a6173d27a8b48fc
+      internalID: 4366619325885321527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_26
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd06bac2e38a61408fb557f547d736a
+      internalID: 1794639016859561966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_27
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61efcf4306ac266488497a07f06dda28
+      internalID: 6549865160918669957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_28
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3c73a272810474bb631be32244f8cc
+      internalID: -1119891718602173874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_29
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f7621cd1b4ec44ca2520381b82687d
+      internalID: -7945537760921275298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_30
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ebf8c19a2f162438b2fc4b5e3e9434
+      internalID: 3552711480876100187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_31
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 1736
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f472e449c8bf44441ae7fd3c9477b25c
+      internalID: -1997234092727192906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_32
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1506
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572e11fb64fa5624db300c4873bb729b
+      internalID: -868737851410026425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arbol-1_33
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1506
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960de668f1129394fa8a01d417c52dfa
+      internalID: 7820834828994692587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
