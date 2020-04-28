@@ -1,27 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-namespace Photon.Pun.UtilityScripts
+public class PhotonManagerConexion : MonoBehaviourPunCallbacks, Photon.Pun.IPunObservable
 {
-    public class PhotonManagerConexion : MonoBehaviourPunCallbacks
+
+    public string Version = "v1";
+    // Start is called before the first frame update
+    void Start()
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-            PhotonNetwork.ConnectUsingSettings();
-            //Photon.ConnectUsingSettings();
-        }
+        PhotonNetwork.ConnectUsingSettings();
+        //Photon.ConnectUsingSettings();
+    }
 
-        // ...
-        public override void OnConnectedToMaster()
-        {
-            Debug.Log("OnConnectedToMaster() was called by PUN.");
-            PhotonNetwork.JoinRandomRoom();
-        }
-        // ...
+    // ...
+    public override void OnConnectedToMaster()
+    {
+        Debug.Log("OnConnectedToMaster() was called by PUN.");
+        PhotonNetwork.JoinOrCreateRoom("Global", new RoomOptions() { MaxPlayers = 2 }, null);
+    }
+    // ...
 
+    // ...
+    public override void OnJoinedRoom()
+    {
+        PhotonNetwork.Instantiate("Player", transform.position, transform.rotation, 0);
+    }
+    // ...
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo message)
+    {
 
     }
 
+
 }
+

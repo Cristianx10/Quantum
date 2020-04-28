@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class PlayerController : MonoBehaviour
+
+public class PlayerController : MonoBehaviourPun
 {
 
     private ArrayList players;
@@ -76,35 +78,40 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
-        anim.SetBool("Grounded", isGrounded);
-        anim.SetBool("Move", (moveLeft || moveRight));
-
-
-        if (Input.GetKeyDown(up) && isGrounded)
+        if (photonView.IsMine)
         {
-            jump = true;
-        }
-
-        if (Input.GetKeyDown(left))
-        {
-            moveLeft = true;
-        }
-
-        if (Input.GetKeyDown(right))
-        {
-            moveRight = true;
-        }
 
 
-        if (Input.GetKeyUp(left))
-        {
-            moveLeft = false;
-        }
+            anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+            anim.SetBool("Grounded", isGrounded);
+            anim.SetBool("Move", (moveLeft || moveRight));
 
-        if (Input.GetKeyUp(right))
-        {
-            moveRight = false;
+
+            if (Input.GetKeyDown(up) && isGrounded)
+            {
+                jump = true;
+            }
+
+            if (Input.GetKeyDown(left))
+            {
+                moveLeft = true;
+            }
+
+            if (Input.GetKeyDown(right))
+            {
+                moveRight = true;
+            }
+
+
+            if (Input.GetKeyUp(left))
+            {
+                moveLeft = false;
+            }
+
+            if (Input.GetKeyUp(right))
+            {
+                moveRight = false;
+            }
         }
     }
 
@@ -211,8 +218,9 @@ public class PlayerController : MonoBehaviour
                         {
                             orientacion = 1;
                         }
-                        
-                        if(direction != null){
+
+                        if (direction != null)
+                        {
                             rb.AddForce(direction * attractiveForce);
                         }
 
@@ -381,9 +389,6 @@ public class PlayerController : MonoBehaviour
 
         }
     }
-
-
-
 
 
 }
