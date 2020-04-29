@@ -23,7 +23,7 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
         if (!photonView.IsMine)
         {
             transform.position = Vector3.Lerp(transform.position, RealPosition, 0.04f);
-            transform.localScale = Vector3.Lerp(transform.localScale, RealScale, 0.04f);
+            //transform.localScale = Vector3.Lerp(transform.localScale, RealScale, 0.04f);
             transform.rotation = Quaternion.Lerp(transform.rotation, RealRotation, 0.04f);
         }
 
@@ -36,7 +36,7 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
         {
             stream.SendNext(transform.position);
             stream.SendNext(transform.rotation);
-            stream.SendNext(transform.localScale);
+           // stream.SendNext(transform.localScale);
 
             stream.SendNext(anim.GetBool("Grounded"));
             stream.SendNext(anim.GetBool("Move"));
@@ -46,7 +46,7 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
         {
             RealPosition = (Vector3)stream.ReceiveNext();
             RealRotation = (Quaternion)stream.ReceiveNext();
-            RealScale = (Vector3)stream.ReceiveNext();
+          //  RealScale = (Vector3)stream.ReceiveNext();
 
             anim.SetBool("Grounded", (bool)stream.ReceiveNext());
             anim.SetBool("Move", (bool)stream.ReceiveNext());
