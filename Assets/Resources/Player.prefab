@@ -273,7 +273,6 @@ MonoBehaviour:
   orientacionX: 1
   orientacionY: 1
   typePlayer: 0
-  attractiveForce: 5
   attractiveDistance: 3
   colliderWall: 0
   touchPlayer: 0
