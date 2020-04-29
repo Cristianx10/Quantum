@@ -330,6 +330,7 @@ MonoBehaviour:
   RealRotation: {x: 0, y: 0, z: 0, w: 0}
   RealScale: {x: 0, y: 0, z: 0}
   anim: {fileID: 8141016451125739119}
+  rb: {fileID: 8141016451318168665}
 --- !u!1 &8950944407822702180
 GameObject:
   m_ObjectHideFlags: 0
