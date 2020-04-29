@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviourPun
     bool moveLeft, moveRight = false;
     public float typePlayer = 0;
 
-    public float attractiveForce = 5;
+    float attractiveForce = 10;
     public float attractiveDistance = 3;
 
     float temOrientacion = 0;
@@ -84,12 +84,9 @@ public class PlayerController : MonoBehaviourPun
             anim.SetBool("Grounded", isGrounded);
             anim.SetBool("Move", (moveLeft || moveRight));
 
-            
+
         if (photonView.IsMine)
         {
-
-
-
 
             if (Input.GetKeyDown(up) && isGrounded)
             {
