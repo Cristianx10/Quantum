@@ -22,9 +22,9 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
     {
         if (!photonView.IsMine)
         {
-            transform.position = Vector3.Lerp(transform.position, RealPosition, 0.04f);
+            transform.position = Vector3.Lerp(transform.position, RealPosition, 0);
             //transform.localScale = Vector3.Lerp(transform.localScale, RealScale, 0.04f);
-            transform.rotation = Quaternion.Lerp(transform.rotation, RealRotation, 0.04f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, RealRotation, 0);
         }
 
 
