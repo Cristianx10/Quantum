@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviourPun
 {
 
     private ArrayList players;
+
     public Rigidbody2D rb;
     private Animator anim;
 
@@ -47,21 +48,13 @@ public class PlayerController : MonoBehaviourPun
 
 
 
-
-
-
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+
         players = new ArrayList();
-        GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
-        foreach (var gameObjectPlayer in gameObjectsPlayers)
-        {
-            PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
-            players.Add(player);
-        }
 
         up = typePlayer == 0 ? KeyCode.UpArrow : KeyCode.W;
         down = typePlayer == 0 ? KeyCode.DownArrow : KeyCode.S;
@@ -79,10 +72,28 @@ public class PlayerController : MonoBehaviourPun
     void Update()
     {
 
-        
-            anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
-            anim.SetBool("Grounded", isGrounded);
-            anim.SetBool("Move", (moveLeft || moveRight));
+        if (players.Count < 2)
+        {
+            GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+            if (gameObjectsPlayers.Length >= 2)
+            {
+
+                foreach (var gameObjectPlayer in gameObjectsPlayers)
+                {
+                    PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
+                    players.Add(player);
+
+                }
+
+            }
+        }
+
+
+
+        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+        anim.SetBool("Grounded", isGrounded);
+        anim.SetBool("Move", (moveLeft || moveRight));
 
 
         if (photonView.IsMine)
@@ -158,13 +169,14 @@ public class PlayerController : MonoBehaviourPun
 
     }
 
-
-
     void MagnetismoPlayers(bool changeOrientation)
     {
-        foreach (var playerObject in players)
+
+        for (int i = 0; i < players.Count; i++)
         {
-            PlayerController player = (PlayerController)playerObject;
+
+            PlayerController player = (PlayerController)players[i];
+
             if (player != this)
             {
                 var maxRange = attractiveDistance;
