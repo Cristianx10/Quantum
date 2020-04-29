@@ -28,7 +28,6 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
         {
             rb.position = Vector3.Lerp(rb.position, RealPosition1, 0.4f);
             rb.velocity = Vector3.Lerp(rb.velocity, RealVelocity1, 0.4f);
-
         }
     }
 
@@ -70,8 +69,8 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
             anim.SetBool("Move", (bool)stream.ReceiveNext());
             anim.SetFloat("Speed", (float)stream.ReceiveNext());
 
-            RealPosition1 = (Vector3)stream.ReceiveNext();
-            RealVelocity1 = (Vector3)stream.ReceiveNext();
+          //  RealPosition1 = (Vector3)stream.ReceiveNext();
+           // RealVelocity1 = (Vector3)stream.ReceiveNext();
         }
     }
 
