@@ -9,8 +9,6 @@ public class PlayerController : MonoBehaviourPun
 
     private ArrayList players;
 
-    private PlayerController p1, p2;
-
     public Rigidbody2D rb;
     private Animator anim;
 
@@ -50,9 +48,6 @@ public class PlayerController : MonoBehaviourPun
 
 
 
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +55,6 @@ public class PlayerController : MonoBehaviourPun
         anim = GetComponentInChildren<Animator>();
 
         players = new ArrayList();
-
 
         up = typePlayer == 0 ? KeyCode.UpArrow : KeyCode.W;
         down = typePlayer == 0 ? KeyCode.DownArrow : KeyCode.S;
@@ -78,18 +72,21 @@ public class PlayerController : MonoBehaviourPun
     void Update()
     {
 
-
-        GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
-        if (gameObjectsPlayers.Length < 2)
+        if (players.Count < 2)
         {
-            foreach (var gameObjectPlayer in gameObjectsPlayers)
-            {
-                PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
+            GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
 
-                players.Add(players);
+            if (gameObjectsPlayers.Length >= 2)
+            {
+
+                foreach (var gameObjectPlayer in gameObjectsPlayers)
+                {
+                    PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
+                    players.Add(player);
+
+                }
 
             }
-
         }
 
 
@@ -175,9 +172,11 @@ public class PlayerController : MonoBehaviourPun
     void MagnetismoPlayers(bool changeOrientation)
     {
 
-        foreach (var playerObject in players)
+        for (int i = 0; i < players.Count; i++)
         {
-            PlayerController player = (PlayerController)playerObject;
+
+            PlayerController player = (PlayerController)players[i];
+
             if (player != this)
             {
                 var maxRange = attractiveDistance;
