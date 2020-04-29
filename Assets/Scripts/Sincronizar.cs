@@ -26,8 +26,8 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
     {
         if (photonView.IsMine)
         {
-            rb.position = Vector3.Lerp(rb.position, RealPosition1, 0.4f);
-            rb.velocity = Vector3.Lerp(rb.velocity, RealVelocity1, 0.4f);
+            //rb.position = Vector3.Lerp(rb.position, RealPosition1, 0.4f);
+            //rb.velocity = Vector3.Lerp(rb.velocity, RealVelocity1, 0.4f);
         }
     }
 
@@ -56,8 +56,8 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
             stream.SendNext(anim.GetBool("Move"));
             stream.SendNext(anim.GetFloat("Speed"));
 
-            stream.SendNext(rb.position);
-            stream.SendNext(rb.velocity);
+           // stream.SendNext(rb.position);
+            //stream.SendNext(rb.velocity);
         }
         else
         {
