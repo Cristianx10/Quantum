@@ -78,13 +78,17 @@ public class PlayerController : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
+
+        
+            anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+            anim.SetBool("Grounded", isGrounded);
+            anim.SetBool("Move", (moveLeft || moveRight));
+
+            
         if (photonView.IsMine)
         {
 
 
-            anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
-            anim.SetBool("Grounded", isGrounded);
-            anim.SetBool("Move", (moveLeft || moveRight));
 
 
             if (Input.GetKeyDown(up) && isGrounded)

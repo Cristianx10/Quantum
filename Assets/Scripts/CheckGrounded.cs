@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class CheckGrounded : MonoBehaviour
+public class CheckGrounded : MonoBehaviourPun
 {
 
     private PlayerController player;
@@ -15,6 +16,7 @@ public class CheckGrounded : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D col)
     {
+        
         if (col.gameObject.tag == "ground")
         {
             player.isGrounded = true;
