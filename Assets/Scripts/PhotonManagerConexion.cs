@@ -19,7 +19,7 @@ public class PhotonManagerConexion : MonoBehaviourPunCallbacks, Photon.Pun.IPunO
     public override void OnConnectedToMaster()
     {
         Debug.Log("OnConnectedToMaster() was called by PUN.");
-        PhotonNetwork.JoinOrCreateRoom("Global", new RoomOptions() { MaxPlayers = 2 }, null);
+        PhotonNetwork.JoinOrCreateRoom("Global2", new RoomOptions() { MaxPlayers = 2 }, null);
     }
     // ...
 
