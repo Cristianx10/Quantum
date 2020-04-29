@@ -328,6 +328,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RealPosition: {x: 0, y: 0, z: 0}
   RealRotation: {x: 0, y: 0, z: 0, w: 0}
+  RealPosition1: {x: 0, y: 0, z: 0}
+  RealRotation1: {x: 0, y: 0, z: 0, w: 1}
+  RealVelocity1: {x: 0, y: 0, z: 0}
+  RealVelocity2: {x: 0, y: 0, z: 0}
   RealScale: {x: 0, y: 0, z: 0}
   anim: {fileID: 8141016451125739119}
   rb: {fileID: 8141016451318168665}
