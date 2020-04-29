@@ -16,7 +16,7 @@ public class CheckGrounded : MonoBehaviourPun
 
     void OnCollisionStay2D(Collision2D col)
     {
-        
+
         if (col.gameObject.tag == "ground")
         {
             player.isGrounded = true;
@@ -46,7 +46,7 @@ public class CheckGrounded : MonoBehaviourPun
 
     void OnBecameInvisible()
     {
-     //   player.rb.velocity = new Vector3(0, 0, 0);
-     //   player.transform.position = new Vector3(13, -2 , 0);
+        player.rb.velocity = new Vector3(0, 0, 0);
+        player.transform.position = new Vector3(13, -2, 0);
     }
 }

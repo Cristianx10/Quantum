@@ -24,10 +24,10 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
 
     void FixedUpdate()
     {
-        if (photonView.IsMine)
+        if (!photonView.IsMine)
         {
-            //rb.position = Vector3.Lerp(rb.position, RealPosition1, 0.4f);
-            //rb.velocity = Vector3.Lerp(rb.velocity, RealVelocity1, 0.4f);
+            //rb.position = Vector3.Lerp(rb.position, RealPosition1, 0);
+            //rb.velocity = Vector3.Lerp(rb.velocity, RealVelocity1, 0);
         }
     }
 
@@ -37,7 +37,7 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
         if (!photonView.IsMine)
         {
             transform.position = Vector3.Lerp(transform.position, RealPosition, 0);
-            //transform.localScale = Vector3.Lerp(transform.localScale, RealScale, 0.04f);
+            transform.localScale = Vector3.Lerp(transform.localScale, RealScale, 1);
             transform.rotation = Quaternion.Lerp(transform.rotation, RealRotation, 0);
         }
 
@@ -48,29 +48,33 @@ public class Sincronizar : MonoBehaviourPun, IPunObservable
     {
         if (stream.IsWriting)
         {
+
+            //stream.SendNext(rb.position);
+            //stream.SendNext(rb.velocity);
+
             stream.SendNext(transform.position);
             stream.SendNext(transform.rotation);
-            // stream.SendNext(transform.localScale);
+            stream.SendNext(transform.localScale);
 
             stream.SendNext(anim.GetBool("Grounded"));
             stream.SendNext(anim.GetBool("Move"));
             stream.SendNext(anim.GetFloat("Speed"));
 
-           // stream.SendNext(rb.position);
-            //stream.SendNext(rb.velocity);
         }
         else
         {
+            //RealPosition1 = (Vector3)stream.ReceiveNext();
+            //RealVelocity1 = (Vector3)stream.ReceiveNext();
+
             RealPosition = (Vector3)stream.ReceiveNext();
             RealRotation = (Quaternion)stream.ReceiveNext();
-            //  RealScale = (Vector3)stream.ReceiveNext();
+            RealScale = (Vector3)stream.ReceiveNext();
 
             anim.SetBool("Grounded", (bool)stream.ReceiveNext());
             anim.SetBool("Move", (bool)stream.ReceiveNext());
             anim.SetFloat("Speed", (float)stream.ReceiveNext());
 
-          //  RealPosition1 = (Vector3)stream.ReceiveNext();
-           // RealVelocity1 = (Vector3)stream.ReceiveNext();
+
         }
     }
 

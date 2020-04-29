@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviourPun
     UnityEngine.KeyCode up, down, left, right,
     initUp, initDown, initLeft, initRight;
 
+    bool keySpace = false;
 
 
     // Start is called before the first frame update
@@ -90,19 +91,20 @@ public class PlayerController : MonoBehaviourPun
         }
 
 
-
-        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
-        anim.SetBool("Grounded", isGrounded);
-        anim.SetBool("Move", (moveLeft || moveRight));
-
-
         if (photonView.IsMine)
         {
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                keySpace = true;
+            }
 
             if (Input.GetKeyDown(up) && isGrounded)
             {
                 jump = true;
             }
+
+
 
             if (Input.GetKeyDown(left))
             {
@@ -124,6 +126,10 @@ public class PlayerController : MonoBehaviourPun
             {
                 moveRight = false;
             }
+
+            anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+            anim.SetBool("Grounded", isGrounded);
+            anim.SetBool("Move", (moveLeft || moveRight));
         }
     }
 
@@ -167,6 +173,8 @@ public class PlayerController : MonoBehaviourPun
             jump = false;
         }
 
+
+
     }
 
     void MagnetismoPlayers(bool changeOrientation)
@@ -187,7 +195,9 @@ public class PlayerController : MonoBehaviourPun
                 Vector3 heading = rel - pos;
 
                 var distance = heading.magnitude;
-                var direction = heading / distance; // This is now the normalized direction.
+                Vector3 direction = player.transform.position - pos; // This is now the normalized direction.
+
+                direction = direction.normalized;
 
                 if (!isChangeOrientationMove)
                 {
@@ -234,7 +244,14 @@ public class PlayerController : MonoBehaviourPun
 
                         if (direction != null)
                         {
-                            rb.AddForce(direction * attractiveForce);
+
+                            rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * attractiveForce);
+
+                            if (keySpace)
+                            {
+                                rb.AddForce((new Vector3(-direction.x, -direction.y, direction.z)) * jumpForce * 10, ForceMode2D.Impulse);
+                                keySpace = false;
+                            }
                         }
 
 
