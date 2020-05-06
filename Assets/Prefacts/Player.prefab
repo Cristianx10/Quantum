@@ -85,11 +85,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7801684655545816676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.935, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0, y: 10.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8141016451318168664}
-  m_RootOrder: 3
+  m_Father: {fileID: 362707744045342444}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!108 &2526263390106249880
 Light:
@@ -100,7 +100,7 @@ Light:
   m_GameObject: {fileID: 7801684655545816676}
   m_Enabled: 1
   serializedVersion: 9
-  m_Type: 1
+  m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -314,7 +314,6 @@ Transform:
   - {fileID: 362707744045342444}
   - {fileID: 8141016451125739114}
   - {fileID: 461595045371519521}
-  - {fileID: 2963237849932596937}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -357,6 +356,7 @@ MonoBehaviour:
   speed: 24
   maxSpeed: 5
   jump: 0
+  jumpForce: 7
   gravedad: 9.8
   power: 1
   orientacion: 1
@@ -396,7 +396,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.935, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2963237849932596937}
   m_Father: {fileID: 8141016451318168664}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -471,3 +472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fc3ecda8ab64c4db40e44beadcebe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mPositivo: {fileID: 2100000, guid: d6ca7eab15977194e82b85241031be5a, type: 2}
+  mNegativo: {fileID: 2100000, guid: 57ccdcdccde41d24c87783d278b05292, type: 2}
+  medidor: {fileID: 8950944407822702180}
