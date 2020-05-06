@@ -7,6 +7,9 @@ public class PlayerInterfacePower : MonoBehaviour
     PlayerController player;
     Material mPositivo;
     Material mNegativo;
+
+    GameObject Object;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +19,9 @@ public class PlayerInterfacePower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(player.power > 0){
+           // gameObject.rende
+        }
         float scalePower = map(player.power, -1, 1, -1, 1);
         transform.localScale = new Vector3(
             scalePower,

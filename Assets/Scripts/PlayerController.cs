@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 24f;
     public float maxSpeed = 5f;
     public bool jump = false;
-    float jumpForce = 7f;
+    public float jumpForce = 7f;
 
     public float gravedad = 9.8f;
     public float power = 1;
