@@ -27,13 +27,23 @@ public class PlayerController : MonoBehaviour
     bool moveLeft, moveRight = false;
     public float typePlayer = 0;
 
-    float attractiveForce = 10;
+    public float attractiveForce = 20;
     public float attractiveDistance = 3;
 
     float temOrientacion = 0;
 
     public bool colliderWall = false;
     public bool touchPlayer = false;
+
+    public float forceImpactA = 2;
+    public float forceImpactB = 1.5f;
+
+    public float minDistForce = 10;
+
+    public float maxDistForce = 20;
+
+
+    public float dis = 0;
 
 
     Vector3 vLeft = Vector2.left;
@@ -103,7 +113,7 @@ public class PlayerController : MonoBehaviour
             if (timeForm != temTimer)
             {
                 temTimer = timeForm;
-              
+
 
                 if (power > 0)
                 {
@@ -114,16 +124,10 @@ public class PlayerController : MonoBehaviour
                     power += 10;
                 }
 
-                  Debug.Log(power);
+
             }
 
 
-        }
-
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            keySpace = true;
         }
 
         if (Input.GetKeyDown(up) && isGrounded)
@@ -214,14 +218,13 @@ public class PlayerController : MonoBehaviour
 
             if (player != this)
             {
-                var maxRange = attractiveDistance;
 
                 Vector3 rel = player.transform.position;
                 Vector3 pos = transform.position;
 
                 Vector3 heading = rel - pos;
 
-                var distance = heading.magnitude;
+                float distance = heading.magnitude;
                 Vector3 direction = player.transform.position - pos; // This is now the normalized direction.
 
                 direction = direction.normalized;
@@ -229,15 +232,19 @@ public class PlayerController : MonoBehaviour
                 if (!isChangeOrientationMove)
                 {
 
+                    dis = distance;
 
-                    if (heading.sqrMagnitude < maxRange * maxRange)
+                    if (distance < attractiveDistance)
                     {
                         //  orientacionY *= -1;
 
+                        if (Input.GetKeyDown(KeyCode.Space))
+                        {
+                            keySpace = true;
+                        }
+
                         if (!touchPlayer)
                         {
-
-
                             if (colliderWall && !player.colliderWall && !isGrounded && player.isGrounded)
                             {
                                 if (direction.y >= .9)
@@ -272,12 +279,16 @@ public class PlayerController : MonoBehaviour
                         if (direction != null)
                         {
 
-                            rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * attractiveForce);
+                            float fuerza = map(distance, attractiveDistance, 0, minDistForce, maxDistForce);
+                            rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * fuerza);
+
 
                             if (keySpace)
                             {
-                                rb.AddForce((new Vector3(-direction.x, -direction.y, direction.z)) * jumpForce * 2, ForceMode2D.Impulse);
-                                keySpace = false;
+                                this.ImpactAtraction(this, direction);
+                                player.ImpactAtraction(this, direction);
+
+
                             }
                         }
 
@@ -314,6 +325,11 @@ public class PlayerController : MonoBehaviour
         isChangeOrientationMove = false;
     }
 
+    void ImpactAtraction(PlayerController p, Vector3 direction)
+    {
+        p.rb.AddForce((new Vector3(-direction.x, -direction.y, direction.z)) * jumpForce * 2, ForceMode2D.Impulse);
+        p.keySpace = false;
+    }
 
     void ConfigOrientation()
     {
@@ -448,4 +464,8 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    float map(float n, float start1, float stop1, float start2, float stop2)
+    {
+        return ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
+    }
 }
