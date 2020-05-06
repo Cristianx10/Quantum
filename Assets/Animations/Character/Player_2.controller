@@ -117,7 +117,19 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Player_2
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: Grounded
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Move
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -209,7 +221,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5559ecec28ed6674a8016d78624765a2, type: 2}
+  m_Motion: {fileID: 7400000, guid: 39705c2ff6bc1bf4c96f77ac69e2a17f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

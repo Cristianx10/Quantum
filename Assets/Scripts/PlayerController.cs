@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private ArrayList players;
 
     public Rigidbody2D rb;
-    private Animator anim;
+    public Animator anim;
 
     public bool isGrounded;
     public float speed = 24f;
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponentInChildren<Animator>();
+        //anim = GetComponentInChildren<Animator>();
 
         players = new ArrayList();
 
