@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
 
     bool keySpace = false;
 
+    private float timeLeft;
+
 
     // Start is called before the first frame update
     void Start()
@@ -90,6 +92,20 @@ public class PlayerController : MonoBehaviour
         }
 
 
+/*
+        if (Mathf.Abs(power - 0) > .1f)
+        {
+            if (power > 0)
+            {
+                power -= .1f;
+            }
+            else if (power < 0)
+            {
+                power += .1f;
+            }
+        }
+*/
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -124,7 +140,7 @@ public class PlayerController : MonoBehaviour
             moveRight = false;
         }
 
-        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+        // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         anim.SetBool("Grounded", isGrounded);
         anim.SetBool("Move", (moveLeft || moveRight));
 
