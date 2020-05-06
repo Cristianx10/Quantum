@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerInterfacePower : MonoBehaviour
 {
     PlayerController player;
+    Material mPositivo;
+    Material mNegativo;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +16,7 @@ public class PlayerInterfacePower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float scalePower = map(player.power, -1, 1, 0.1f, 2);
+        float scalePower = map(player.power, -1, 1, -1, 1);
         transform.localScale = new Vector3(
             scalePower,
             transform.localScale.y,
