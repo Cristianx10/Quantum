@@ -6,7 +6,7 @@ public class CargaGraphics : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public GameObject gameObject;
+    public GameObject refGameObject;
 
     public int type = 0;
 
@@ -30,7 +30,7 @@ public class CargaGraphics : MonoBehaviour
             player.power = 2;
 
             Debug.Log("Eliminar");
-            Destroy(gameObject, 0f);
+            Destroy(refGameObject, 0f);
         }
 
     }
