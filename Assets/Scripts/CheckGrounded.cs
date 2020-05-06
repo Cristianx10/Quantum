@@ -43,9 +43,10 @@ public class CheckGrounded : MonoBehaviour
     }
 
 
-    void OnBecameInvisible()
+    /*void OnBecameInvisible()
     {
         player.rb.velocity = new Vector3(0, 0, 0);
         player.transform.position = new Vector3(13, -2, 0);
     }
+    */
 }

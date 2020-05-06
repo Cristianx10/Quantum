@@ -276,7 +276,7 @@ public class PlayerController : MonoBehaviour
 
                             if (keySpace)
                             {
-                                rb.AddForce((new Vector3(-direction.x, -direction.y, direction.z)) * jumpForce * 10, ForceMode2D.Impulse);
+                                rb.AddForce((new Vector3(-direction.x, -direction.y, direction.z)) * jumpForce * 2, ForceMode2D.Impulse);
                                 keySpace = false;
                             }
                         }
