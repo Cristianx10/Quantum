@@ -5,7 +5,7 @@ using UnityEngine;
 public class CargaScript : MonoBehaviour
 {
 
-    public GameObject gameObject;
+    public GameObject refObject;
     // Start is called before the first frame update
     void Start()
     {

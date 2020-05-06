@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 7f;
 
     public float gravedad = 9.8f;
-    public float power = 1;
+    public int power = 100;
 
     public float orientacion = 1;
     public float orientacionX = 1;
@@ -47,7 +47,8 @@ public class PlayerController : MonoBehaviour
 
     bool keySpace = false;
 
-    private float timeLeft;
+    private float timer = 0;
+    private float temTimer = 0;
 
 
     // Start is called before the first frame update
@@ -91,20 +92,33 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
-/*
-        if (Mathf.Abs(power - 0) > .1f)
+        if (power != 0)
         {
-            if (power > 0)
+            timer -= (Time.deltaTime);
+
+
+
+            int timeForm = (int)(timer);
+
+            if (timeForm != temTimer)
             {
-                power -= .1f;
+                temTimer = timeForm;
+              
+
+                if (power > 0)
+                {
+                    power -= 10;
+                }
+                else if (power < 0)
+                {
+                    power += 10;
+                }
+
+                  Debug.Log(power);
             }
-            else if (power < 0)
-            {
-                power += .1f;
-            }
+
+
         }
-*/
 
 
         if (Input.GetKeyDown(KeyCode.Space))

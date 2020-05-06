@@ -8,16 +8,29 @@ public class CargaGraphics : MonoBehaviour
 
     public GameObject refGameObject;
 
+    public Material blue;
+    public Material red;
+
     public int type = 0;
+
+    Renderer renderer;
 
     void Start()
     {
-
+        renderer = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (type == 0)
+        {
+            renderer.material = blue;
+        }
+        else
+        {
+            renderer.material = red;
+        }
 
     }
 
@@ -27,7 +40,14 @@ public class CargaGraphics : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             PlayerController player = col.gameObject.GetComponent<PlayerController>();
-            player.power = 2;
+            if (type == 0)
+            {
+                player.power += 100;
+            }
+            else
+            {
+                player.power -= 100;
+            }
 
             Debug.Log("Eliminar");
             Destroy(refGameObject, 0f);
