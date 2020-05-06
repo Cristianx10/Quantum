@@ -827,6 +827,7 @@ GameObject:
   - component: {fileID: 1410176395}
   - component: {fileID: 1410176394}
   - component: {fileID: 1410176396}
+  - component: {fileID: 1410176397}
   m_Layer: 0
   m_Name: pared
   m_TagString: ground
@@ -913,8 +914,18 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -68.683014, y: -20.844896}
-  - {x: -32.20281, y: -20.908176}
+  - {x: -69.548706, y: -20.490746}
+  - {x: -47.455452, y: -20.479254}
+  - {x: -45.70375, y: -20.129921}
+  - {x: -44.984406, y: -20.08183}
+  - {x: -43.64285, y: -20.204788}
+  - {x: -42.163624, y: -20.176071}
+  - {x: -41.386265, y: -20.03414}
+  - {x: -40.983948, y: -20.011204}
+  - {x: -40.57971, y: -20.08647}
+  - {x: -40.03505, y: -20.306253}
+  - {x: -39.60877, y: -20.419085}
+  - {x: -32.09188, y: -20.44229}
   - {x: -32.165104, y: -27.996023}
   - {x: 18.34877, y: -28.278713}
   - {x: 18.161522, y: -20.648438}
@@ -1018,6 +1029,25 @@ EdgeCollider2D:
   - {x: 62.95062, y: 4.667199}
   - {x: 64.86333, y: 2.559412}
   - {x: 66.399994, y: 0}
+--- !u!95 &1410176397
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410176391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a2542f1bcd5c124c9a0963264917d03, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1568448649
 GameObject:
   m_ObjectHideFlags: 0
