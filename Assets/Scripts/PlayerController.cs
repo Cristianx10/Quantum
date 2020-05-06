@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 
 
-public class PlayerController : MonoBehaviourPun
+public class PlayerController : MonoBehaviour
 {
 
     private ArrayList players;
@@ -91,46 +90,44 @@ public class PlayerController : MonoBehaviourPun
         }
 
 
-        if (photonView.IsMine)
+
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                keySpace = true;
-            }
-
-            if (Input.GetKeyDown(up) && isGrounded)
-            {
-                jump = true;
-            }
-
-
-
-            if (Input.GetKeyDown(left))
-            {
-                moveLeft = true;
-            }
-
-            if (Input.GetKeyDown(right))
-            {
-                moveRight = true;
-            }
-
-
-            if (Input.GetKeyUp(left))
-            {
-                moveLeft = false;
-            }
-
-            if (Input.GetKeyUp(right))
-            {
-                moveRight = false;
-            }
-
-            anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
-            anim.SetBool("Grounded", isGrounded);
-            anim.SetBool("Move", (moveLeft || moveRight));
+            keySpace = true;
         }
+
+        if (Input.GetKeyDown(up) && isGrounded)
+        {
+            jump = true;
+        }
+
+
+
+        if (Input.GetKeyDown(left))
+        {
+            moveLeft = true;
+        }
+
+        if (Input.GetKeyDown(right))
+        {
+            moveRight = true;
+        }
+
+
+        if (Input.GetKeyUp(left))
+        {
+            moveLeft = false;
+        }
+
+        if (Input.GetKeyUp(right))
+        {
+            moveRight = false;
+        }
+
+        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+        anim.SetBool("Grounded", isGrounded);
+        anim.SetBool("Move", (moveLeft || moveRight));
+
     }
 
     void FixedUpdate()
