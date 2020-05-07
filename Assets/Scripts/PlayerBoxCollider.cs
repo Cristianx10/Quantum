@@ -25,7 +25,14 @@ public class PlayerBoxCollider : MonoBehaviour
     {
         if (col.gameObject.tag == "ground")
         {
-        player.colliderWall = false;
+            StartCoroutine(Reset());
+           
         }
+    }
+
+    IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(1);
+        player.colliderWall = false;
     }
 }

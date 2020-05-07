@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
 
     public float dis = 0;
 
+    private bool isJumped = false;
+
 
     Vector3 vLeft = Vector2.left;
     Vector3 vRight = Vector2.right;
@@ -106,8 +108,6 @@ public class PlayerController : MonoBehaviour
         {
             timer -= (Time.deltaTime);
 
-
-
             int timeForm = (int)(timer);
 
             if (timeForm != temTimer)
@@ -126,13 +126,12 @@ public class PlayerController : MonoBehaviour
 
 
             }
-
-
         }
 
         if (Input.GetKeyDown(up) && isGrounded)
         {
             jump = true;
+            isJumped = true;
         }
 
 
@@ -171,7 +170,7 @@ public class PlayerController : MonoBehaviour
 
         //Gravedad
 
-        rb.AddForce(vDown * gravedad);
+    rb.AddForce(vDown * gravedad);
 
         //Friccion
 
@@ -188,6 +187,7 @@ public class PlayerController : MonoBehaviour
                 fixedVelocity.y *= mxspeed;
             }
             rb.velocity = fixedVelocity;
+            isJumped = false;
         }
 
 
@@ -229,78 +229,85 @@ public class PlayerController : MonoBehaviour
 
                 direction = direction.normalized;
 
-                if (!isChangeOrientationMove)
+                dis = distance;
+
+                Vector3 dir1 = new Vector3(direction.x, direction.y, direction.z);
+                Vector3 dir2 = new Vector3(-direction.x, -direction.y, direction.z);
+
+                if (distance < attractiveDistance && distance > 2)
                 {
 
-                    dis = distance;
-
-                    if (distance < attractiveDistance)
+                    if (!isChangeOrientationMove)
                     {
-                        //  orientacionY *= -1;
 
                         if (Input.GetKeyDown(KeyCode.Space))
                         {
                             keySpace = true;
                         }
 
-                        if (!touchPlayer)
+                        if (colliderWall && player.isGrounded && !isJumped && !player.isJumped)
                         {
-                            if (colliderWall && !player.colliderWall && !isGrounded && player.isGrounded)
+                            if (direction.y >= .9)
                             {
-                                if (direction.y >= .9)
-                                {
-                                    orientacion = 3; isChangeOrientationMove = true;
-                                }
-                                else if (direction.y < -.9)
-                                {
-                                    orientacion = 1; isChangeOrientationMove = true;
-                                }
+                                orientacion = 3;
+                                isChangeOrientationMove = true;
                             }
-
-                            if (colliderWall && player.colliderWall)
+                            else if (direction.y < -.9)
                             {
-
-                                if (direction.x >= .9)
-                                {
-                                    orientacion = 4; isChangeOrientationMove = true;
+                                orientacion = 1;
+                                if(temOrientacion == 1){
+                                    temOrientacion = 0;
                                 }
-                                else if (direction.x < -.9)
-                                {
-                                    orientacion = 2; isChangeOrientationMove = true;
-                                }
-
+                                isChangeOrientationMove = true;
                             }
                         }
-                        else
+
+                        if (colliderWall && player.colliderWall)
                         {
-                            orientacion = 1;
+
+                            if (direction.x >= .9)
+                            {
+                                orientacion = 4;
+                                isChangeOrientationMove = true;
+                            }
+                            else if (direction.x < -.9)
+                            {
+                                orientacion = 2;
+                                isChangeOrientationMove = true;
+                            }
+
                         }
+
+
 
                         if (direction != null)
                         {
 
+
+
                             float fuerza = map(distance, attractiveDistance, 0, minDistForce, maxDistForce);
-                            rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * fuerza);
+                            rb.AddForce(dir1 * fuerza);
 
 
-                            if (keySpace)
-                            {
-                                this.ImpactAtraction(this, direction);
-                                player.ImpactAtraction(this, direction);
-
-
-                            }
                         }
-
-
                         StartCoroutine(Reset());
                     }
-                    else
-                    {
-                        isChangeOrientationMove = false;
-                        colliderWall = false;
-                        orientacion = 1;
-                    }
+                }
+                else
+                {
+                    player.isChangeOrientationMove = false;
+                    player.colliderWall = false;
+                    player.orientacion = 1;
+                   
+                }
+
+                if (keySpace)
+                {
+                    keySpace = false;
+                    // this.ImpactAtraction(dir2);
+                    player.ImpactAtraction(dir1);
+                    
+
                 }
 
             }
@@ -325,14 +332,16 @@ public class PlayerController : MonoBehaviour
         isChangeOrientationMove = false;
     }
 
-    void ImpactAtraction(PlayerController p, Vector3 direction)
+    void ImpactAtraction(Vector3 direction)
     {
-        p.rb.AddForce((new Vector3(-direction.x, -direction.y, direction.z)) * jumpForce * 2, ForceMode2D.Impulse);
-        p.keySpace = false;
+        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce, ForceMode2D.Impulse);
+        keySpace = false;
     }
 
     void ConfigOrientation()
     {
+
+
         if (orientacion == 1)
         {
             vUp = Vector2.up;
