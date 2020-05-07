@@ -55,12 +55,23 @@ public class PlayerController : MonoBehaviour
 
 
     UnityEngine.KeyCode up, down, left, right,
-    initUp, initDown, initLeft, initRight;
+    initUp, initDown, initLeft, initRight, kdisparo;
 
     bool keySpace = false;
 
     private float timer = 0;
     private float temTimer = 0;
+
+    public Transform prefactBala;
+
+    public bool isDisparo = false;
+
+    public int vista = 4;
+
+    public int vistaUp = 1;
+    public int vistaDown = 2;
+    public int vistaLeft = 3;
+    public int vistaRight = 4;
 
 
     // Start is called before the first frame update
@@ -75,6 +86,7 @@ public class PlayerController : MonoBehaviour
         down = typePlayer == 0 ? KeyCode.DownArrow : KeyCode.S;
         left = typePlayer == 0 ? KeyCode.LeftArrow : KeyCode.A;
         right = typePlayer == 0 ? KeyCode.RightArrow : KeyCode.D;
+        kdisparo = typePlayer == 0 ? KeyCode.M : KeyCode.Q;
 
         initUp = up;
         initDown = down;
@@ -135,21 +147,69 @@ public class PlayerController : MonoBehaviour
         }
 
 
+        if (Input.GetKeyDown(kdisparo))
+        {
+
+            Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            float dist = 2F;
+
+            switch (vista)
+            {
+                case 1:
+                    initVector = new Vector3(transform.position.x, transform.position.y - dist, transform.position.z);
+                    break;
+                case 2:
+                    initVector = new Vector3(transform.position.x, transform.position.y + dist, transform.position.z);
+                    break;
+                case 3:
+                    initVector = new Vector3(transform.position.x - dist, transform.position.y, transform.position.z);
+                    break;
+                case 4:
+                    initVector = new Vector3(transform.position.x + dist, transform.position.y, transform.position.z);
+                    break;
+            }
+
+            Transform balaTrasnform = Instantiate(prefactBala, initVector, Quaternion.identity);
+            BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
+            switch (vista)
+            {
+                case 1:
+                    b.up = true;
+                    break;
+                case 2:
+                    b.down = true;
+                    break;
+                case 3:
+                    b.left = true;
+                    break;
+                case 4:
+                    b.right = true;
+                    break;
+            }
+
+            isDisparo = true;
+        }
+
+
+
 
         if (Input.GetKeyDown(left))
         {
             moveLeft = true;
+
         }
 
         if (Input.GetKeyDown(right))
         {
             moveRight = true;
+
         }
 
 
         if (Input.GetKeyUp(left))
         {
             moveLeft = false;
+
         }
 
         if (Input.GetKeyUp(right))
@@ -170,7 +230,7 @@ public class PlayerController : MonoBehaviour
 
         //Gravedad
 
-    rb.AddForce(vDown * gravedad);
+        rb.AddForce(vDown * gravedad);
 
         //Friccion
 
@@ -255,7 +315,8 @@ public class PlayerController : MonoBehaviour
                             else if (direction.y < -.9)
                             {
                                 orientacion = 1;
-                                if(temOrientacion == 1){
+                                if (temOrientacion == 1)
+                                {
                                     temOrientacion = 0;
                                 }
                                 isChangeOrientationMove = true;
@@ -298,7 +359,7 @@ public class PlayerController : MonoBehaviour
                     player.isChangeOrientationMove = false;
                     player.colliderWall = false;
                     player.orientacion = 1;
-                   
+
                 }
 
                 if (keySpace)
@@ -306,7 +367,7 @@ public class PlayerController : MonoBehaviour
                     keySpace = false;
                     // this.ImpactAtraction(dir2);
                     player.ImpactAtraction(dir1);
-                    
+
 
                 }
 
@@ -355,6 +416,11 @@ public class PlayerController : MonoBehaviour
             left = initLeft;
             right = initRight;
 
+            vistaUp = 1;
+            vistaDown = 2;
+            vistaLeft = 3;
+            vistaRight = 4;
+
             /*transform.localScale = new Vector3(
                 transform.localScale.x, 1, transform.localScale.z);*/
         }
@@ -367,9 +433,14 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 270);
 
             up = initRight;
-            right = initDown;
             down = initLeft;
             left = initUp;
+            right = initDown;
+
+            vistaUp = 4;
+            vistaDown = 3;
+            vistaLeft = 1;
+            vistaRight = 2;
 
             /*transform.localScale = new Vector3(
                 1, transform.localScale.y, transform.localScale.z);*/
@@ -384,9 +455,15 @@ public class PlayerController : MonoBehaviour
 
 
             up = initDown;
-            right = initLeft;
             down = initUp;
             left = initRight;
+            right = initLeft;
+
+            vistaUp = 2;
+            vistaDown = 1;
+            vistaLeft = 4;
+            vistaRight = 3;
+
 
             /*transform.localScale = new Vector3(
                 transform.localScale.x, -1, transform.localScale.z);*/
@@ -400,9 +477,14 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 90);
 
             up = initLeft;
-            right = initUp;
             down = initRight;
             left = initDown;
+            right = initUp;
+
+            vistaUp = 3;
+            vistaDown = 4;
+            vistaLeft = 2;
+            vistaRight = 1;
 
             /*transform.localScale = new Vector3(
                 -1, transform.localScale.y, transform.localScale.z);*/
@@ -415,6 +497,7 @@ public class PlayerController : MonoBehaviour
 
         if (moveLeft)
         {
+            vista = vistaLeft;
             transform.localScale = new Vector3(
                 -1,
                 transform.localScale.y,
@@ -425,6 +508,7 @@ public class PlayerController : MonoBehaviour
 
         if (moveRight)
         {
+            vista = vistaRight;
             transform.localScale = new Vector3(
                 1,
                 transform.localScale.y,

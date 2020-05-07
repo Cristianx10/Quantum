@@ -363,9 +363,18 @@ MonoBehaviour:
   orientacionX: 1
   orientacionY: 1
   typePlayer: 0
+  attractiveForce: 20
   attractiveDistance: 3
   colliderWall: 0
   touchPlayer: 0
+  forceImpactA: 2
+  forceImpactB: 1.5
+  minDistForce: 10
+  maxDistForce: 20
+  dis: 0
+  prefactBala: {fileID: 6373198338630257395, guid: fa9c7b16c4639564ba17e406f92e7277,
+    type: 3}
+  isDisparo: 0
 --- !u!1 &8950944407822702180
 GameObject:
   m_ObjectHideFlags: 0
