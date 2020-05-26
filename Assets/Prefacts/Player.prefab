@@ -264,7 +264,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.35}
@@ -375,6 +375,11 @@ MonoBehaviour:
   prefactBala: {fileID: 6373198338630257395, guid: fa9c7b16c4639564ba17e406f92e7277,
     type: 3}
   isDisparo: 0
+  vista: 4
+  vistaUp: 1
+  vistaDown: 2
+  vistaLeft: 3
+  vistaRight: 4
 --- !u!1 &8950944407822702180
 GameObject:
   m_ObjectHideFlags: 0
