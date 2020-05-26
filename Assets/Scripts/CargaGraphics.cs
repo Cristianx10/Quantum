@@ -11,6 +11,8 @@ public class CargaGraphics : MonoBehaviour
     public Material blue;
     public Material red;
 
+    public ParticleSystem particulas;
+
     public int type = 0;
 
     Renderer renderer;
@@ -26,6 +28,7 @@ public class CargaGraphics : MonoBehaviour
         if (type == 0)
         {
             renderer.material = blue;
+            particulas.startColor = Color.blue;
         }
         else
         {
