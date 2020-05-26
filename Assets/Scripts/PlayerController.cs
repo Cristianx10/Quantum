@@ -294,7 +294,7 @@ public class PlayerController : MonoBehaviour
                 Vector3 dir1 = new Vector3(direction.x, direction.y, direction.z);
                 Vector3 dir2 = new Vector3(-direction.x, -direction.y, direction.z);
 
-                if (distance < attractiveDistance && distance > 2)
+                if (distance < attractiveDistance && distance > 1)
                 {
 
                     if (!isChangeOrientationMove)
@@ -340,15 +340,10 @@ public class PlayerController : MonoBehaviour
                         }
 
 
-
                         if (direction != null)
                         {
-
-
-
                             float fuerza = map(distance, attractiveDistance, 0, minDistForce, maxDistForce);
                             rb.AddForce(dir1 * fuerza);
-
 
                         }
                         StartCoroutine(Reset());
@@ -358,7 +353,7 @@ public class PlayerController : MonoBehaviour
                 {
                     player.isChangeOrientationMove = false;
                     player.colliderWall = false;
-                    player.orientacion = 1;
+                   player.orientacion = 1;
 
                 }
 
