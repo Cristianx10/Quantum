@@ -74,6 +74,11 @@ public class PlayerController : MonoBehaviour
     public int vistaRight = 4;
 
 
+    public Light luz;
+
+    private float minLuz = 0;
+    private float maxLuz = 50;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -216,6 +221,10 @@ public class PlayerController : MonoBehaviour
         {
             moveRight = false;
         }
+
+
+        luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
+        luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 100);
 
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         anim.SetBool("Grounded", isGrounded);
