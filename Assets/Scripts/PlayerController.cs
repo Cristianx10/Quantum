@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     public float typePlayer = 0;
 
     public float attractiveForce = 20;
-    public float attractiveDistance = 3;
+    private float attractiveDistance = 10;
 
     float temOrientacion = 0;
 
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
     public float minDistForce = 10;
 
-    public float maxDistForce = 20;
+    private float maxDistForce = 40;
 
 
     public float dis = 0;
@@ -73,6 +73,11 @@ public class PlayerController : MonoBehaviour
     public int vistaLeft = 3;
     public int vistaRight = 4;
 
+
+    public Light luz;
+
+    private float minLuz = 0;
+    private float maxLuz = 50;
 
     // Start is called before the first frame update
     void Start()
@@ -217,6 +222,10 @@ public class PlayerController : MonoBehaviour
             moveRight = false;
         }
 
+
+        luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
+        luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 100);
+
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         anim.SetBool("Grounded", isGrounded);
         anim.SetBool("Move", (moveLeft || moveRight));
@@ -249,6 +258,9 @@ public class PlayerController : MonoBehaviour
             rb.velocity = fixedVelocity;
             isJumped = false;
         }
+
+
+
 
 
         MoveHorizontalForce();
@@ -294,7 +306,7 @@ public class PlayerController : MonoBehaviour
                 Vector3 dir1 = new Vector3(direction.x, direction.y, direction.z);
                 Vector3 dir2 = new Vector3(-direction.x, -direction.y, direction.z);
 
-                if (distance < attractiveDistance && distance > 1)
+                if (distance < attractiveDistance && ((this.power > 10 && player.power < -10) || (player.power > 10 && power < -10)))
                 {
 
                     if (!isChangeOrientationMove)
@@ -342,7 +354,10 @@ public class PlayerController : MonoBehaviour
 
                         if (direction != null)
                         {
-                            float fuerza = map(distance, attractiveDistance, 0, minDistForce, maxDistForce);
+
+                            float temMaxDistForce = map(Mathf.Abs(power), 0, 100, 0, maxDistForce);
+
+                            float fuerza = map(distance, 0, attractiveDistance, minDistForce, temMaxDistForce);
                             rb.AddForce(dir1 * fuerza);
 
                         }
@@ -353,7 +368,7 @@ public class PlayerController : MonoBehaviour
                 {
                     player.isChangeOrientationMove = false;
                     player.colliderWall = false;
-                   player.orientacion = 1;
+                    player.orientacion = 1;
 
                 }
 

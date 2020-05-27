@@ -85,7 +85,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7801684655545816676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.06, z: 0}
+  m_LocalPosition: {x: 0, y: -10.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 362707744045342444}
@@ -100,9 +100,9 @@ Light:
   m_GameObject: {fileID: 7801684655545816676}
   m_Enabled: 1
   serializedVersion: 9
-  m_Type: 0
+  m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 150
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -144,7 +144,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -364,13 +364,11 @@ MonoBehaviour:
   orientacionY: 1
   typePlayer: 0
   attractiveForce: 20
-  attractiveDistance: 3
   colliderWall: 0
   touchPlayer: 0
   forceImpactA: 2
   forceImpactB: 1.5
   minDistForce: 10
-  maxDistForce: 20
   dis: 0
   prefactBala: {fileID: 6373198338630257395, guid: fa9c7b16c4639564ba17e406f92e7277,
     type: 3}
@@ -380,6 +378,7 @@ MonoBehaviour:
   vistaDown: 2
   vistaLeft: 3
   vistaRight: 4
+  luz: {fileID: 2526263390106249880}
 --- !u!1 &8950944407822702180
 GameObject:
   m_ObjectHideFlags: 0
