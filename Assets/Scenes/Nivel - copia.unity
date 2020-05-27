@@ -751,6 +751,7 @@ GameObject:
   - component: {fileID: 1568448650}
   - component: {fileID: 1568448652}
   - component: {fileID: 1568448653}
+  - component: {fileID: 1568448654}
   m_Layer: 0
   m_Name: Fondo
   m_TagString: Untagged
@@ -775,7 +776,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b937c70e657570418e60fda1c76b497, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -899,6 +900,19 @@ LightProbeGroup:
   - {x: -1, y: -1, z: 1}
   - {x: -1, y: -1, z: -1}
   m_Dering: 1
+--- !u!114 &1568448654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568448649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50665aff0b00b4469de8225fd68f5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 2b937c70e657570418e60fda1c76b497, type: 2}
 --- !u!1001 &1813169037
 PrefabInstance:
   m_ObjectHideFlags: 0
