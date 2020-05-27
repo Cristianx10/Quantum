@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
     public Light luz;
 
     private float minLuz = 0;
-    private float maxLuz = 50;
+    private float maxLuz = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -309,7 +309,7 @@ public class PlayerController : MonoBehaviour
                 var cargasDiferentes = ((this.power > 10 && player.power < -10) || (player.power > 10 && power < -10));
 
 
-                cargasDiferentes = true;
+                //cargasDiferentes = true;
                 
 
                 if (distance < attractiveDistance && (cargasDiferentes))
