@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     public float typePlayer = 0;
 
     public float attractiveForce = 20;
-    private float attractiveDistance = 10;
+    public float attractiveDistance = 5;
 
     float temOrientacion = 0;
 
@@ -224,7 +224,7 @@ public class PlayerController : MonoBehaviour
 
 
         luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
-        luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 100);
+        luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 200);
 
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         anim.SetBool("Grounded", isGrounded);
