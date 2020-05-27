@@ -306,7 +306,13 @@ public class PlayerController : MonoBehaviour
                 Vector3 dir1 = new Vector3(direction.x, direction.y, direction.z);
                 Vector3 dir2 = new Vector3(-direction.x, -direction.y, direction.z);
 
-                if (distance < attractiveDistance && ((this.power > 10 && player.power < -10) || (player.power > 10 && power < -10)))
+                var cargasDiferentes = ((this.power > 10 && player.power < -10) || (player.power > 10 && power < -10));
+
+
+                cargasDiferentes = true;
+                
+
+                if (distance < attractiveDistance && (cargasDiferentes))
                 {
 
                     if (!isChangeOrientationMove)
@@ -356,8 +362,14 @@ public class PlayerController : MonoBehaviour
                         {
 
                             float temMaxDistForce = map(Mathf.Abs(power), 0, 100, 0, maxDistForce);
-
                             float fuerza = map(distance, 0, attractiveDistance, minDistForce, temMaxDistForce);
+
+                            if (cargasDiferentes)
+                            {
+                                fuerza = map(distance, 0, attractiveDistance, minDistForce, maxDistForce);
+                            }
+
+
                             rb.AddForce(dir1 * fuerza);
 
                         }
