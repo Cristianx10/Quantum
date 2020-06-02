@@ -7,6 +7,7 @@ public class CargaGraphics : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject refGameObject;
+     public GameObject refDesaparecer;
 
     public Material blue;
     public Material red;
@@ -40,12 +41,13 @@ public class CargaGraphics : MonoBehaviour
 
     public void starCorutina()
     {
+        refDesaparecer.SetActive(false);
         StartCoroutine(Reset());
     }
 
     public IEnumerator Reset()
     {
         yield return new WaitForSeconds(5);
-        refGameObject.SetActive(true);
+        refDesaparecer.SetActive(true);
     }
 }
