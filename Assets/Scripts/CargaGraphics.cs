@@ -53,8 +53,14 @@ public class CargaGraphics : MonoBehaviour
             }
 
             Debug.Log("Eliminar");
-            Destroy(refGameObject, 0f);
+            refGameObject.SetActive(false);
+            StartCoroutine(Reset());
         }
+    }
 
+     IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(5);
+        refGameObject.SetActive(true);
     }
 }
