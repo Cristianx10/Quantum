@@ -7,6 +7,7 @@ public class CargaScript : MonoBehaviour
 
     public GameObject refObject;
     public CargaGraphics carga;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,6 @@ public class CargaScript : MonoBehaviour
 
             Debug.Log("Eliminar");
             carga.starCorutina();
-            gameObject.SetActive(false);
         }
     }
 
