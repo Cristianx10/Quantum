@@ -4820,7 +4820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4106276335891046858}
-  - component: {fileID: 2336816381190515951}
+  - component: {fileID: 1079781231688399329}
   m_Layer: 0
   m_Name: Carga
   m_TagString: Untagged
@@ -4845,7 +4845,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2336816381190515951
+--- !u!114 &1079781231688399329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4854,10 +4854,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5545147864773038622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7023ee2f44cd68947b3818bad66bd942, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a6638de49f74d04a8140394bf25f258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refObject: {fileID: 0}
+  refGameObject: {fileID: 8750437746147331218}
+  blue: {fileID: 2100000, guid: d6ca7eab15977194e82b85241031be5a, type: 2}
+  red: {fileID: 2100000, guid: 57ccdcdccde41d24c87783d278b05292, type: 2}
+  particulas: {fileID: 4408011560301010277}
+  type: 0
+  renderer: {fileID: 0}
 --- !u!1 &7046010879716310473
 GameObject:
   m_ObjectHideFlags: 0
@@ -4960,8 +4965,8 @@ GameObject:
   - component: {fileID: 6928469716602871104}
   - component: {fileID: 2352194630482139287}
   - component: {fileID: 467232801675963411}
-  - component: {fileID: 8542051083515032789}
   - component: {fileID: 4542834779605023023}
+  - component: {fileID: 6196436580990249767}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -5029,23 +5034,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &8542051083515032789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8750437746147331218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a6638de49f74d04a8140394bf25f258, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  refGameObject: {fileID: 5545147864773038622}
-  blue: {fileID: 2100000, guid: d6ca7eab15977194e82b85241031be5a, type: 2}
-  red: {fileID: 2100000, guid: 57ccdcdccde41d24c87783d278b05292, type: 2}
-  particulas: {fileID: 4408011560301010277}
-  type: 0
 --- !u!61 &4542834779605023023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5072,3 +5060,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6196436580990249767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8750437746147331218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7023ee2f44cd68947b3818bad66bd942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refObject: {fileID: 5545147864773038622}
+  carga: {fileID: 0}

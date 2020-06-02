@@ -77,6 +77,8 @@ public class BalaController : MonoBehaviour
         }
     }
 
+    
+
     IEnumerator Reset()
     {
         yield return new WaitForSeconds(5);

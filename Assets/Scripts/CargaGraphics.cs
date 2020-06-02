@@ -15,11 +15,11 @@ public class CargaGraphics : MonoBehaviour
 
     public int type = 0;
 
-    Renderer renderer;
+    public Renderer renderer;
 
     void Start()
     {
-        renderer = GetComponent<Renderer>();
+        renderer = refGameObject.GetComponent<Renderer>();
     }
 
     // Update is called once per frame
@@ -37,28 +37,13 @@ public class CargaGraphics : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+
+    public void starCorutina()
     {
-
-        if (col.gameObject.tag == "Player")
-        {
-            PlayerController player = col.gameObject.GetComponent<PlayerController>();
-            if (type == 0)
-            {
-                player.power += 100;
-            }
-            else
-            {
-                player.power -= 100;
-            }
-
-            Debug.Log("Eliminar");
-            refGameObject.SetActive(false);
-            StartCoroutine(Reset());
-        }
+        StartCoroutine(Reset());
     }
 
-     IEnumerator Reset()
+    public IEnumerator Reset()
     {
         yield return new WaitForSeconds(5);
         refGameObject.SetActive(true);
