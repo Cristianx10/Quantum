@@ -474,7 +474,7 @@ public class PlayerController : MonoBehaviour
 
     void ImpactAtraction(Vector3 direction)
     {
-        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 50, ForceMode2D.Impulse);
+        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 20, ForceMode2D.Impulse);
         keySpace = false;
     }
 
