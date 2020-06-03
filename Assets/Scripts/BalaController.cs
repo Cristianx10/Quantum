@@ -62,8 +62,18 @@ public class BalaController : MonoBehaviour
             {
                 player.power -= 10;
             }
-            Eliminar();
         }
+
+        if (col.gameObject.tag == "Enemigo")
+        {
+            EnemyScript enemigo = col.gameObject.GetComponent<EnemyScript>();
+            if (enemigo)
+            {
+                enemigo.vida -= 1;
+            }
+        }
+
+        Eliminar();
 
 
     }
