@@ -7,10 +7,13 @@ public class CargaGraphics : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject refGameObject;
-     public GameObject refDesaparecer;
+    public GameObject refDesaparecer;
 
     public Material blue;
     public Material red;
+
+
+    public SpriteRenderer renderSprite;
 
     public ParticleSystem particulas;
 
@@ -21,6 +24,7 @@ public class CargaGraphics : MonoBehaviour
     void Start()
     {
         renderer = refGameObject.GetComponent<Renderer>();
+
     }
 
     // Update is called once per frame
@@ -30,9 +34,11 @@ public class CargaGraphics : MonoBehaviour
         {
             renderer.material = blue;
             particulas.startColor = Color.blue;
+            renderSprite.color = Color.blue;
         }
         else
         {
+            renderSprite.color = Color.red;
             renderer.material = red;
         }
 
