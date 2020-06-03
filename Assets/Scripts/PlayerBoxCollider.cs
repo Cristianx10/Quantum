@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerBoxCollider : MonoBehaviour
 {
 
-    private PlayerController player;
+    public PlayerController player;
 
     // Start is called before the first frame update
     void Start()

@@ -364,6 +364,7 @@ MonoBehaviour:
   orientacionY: 1
   typePlayer: 0
   attractiveForce: 20
+  attractiveDistance: 5
   colliderWall: 0
   touchPlayer: 0
   forceImpactA: 2
@@ -378,6 +379,7 @@ MonoBehaviour:
   vistaDown: 2
   vistaLeft: 3
   vistaRight: 4
+  scena: 
   luz: {fileID: 2526263390106249880}
 --- !u!1 &8950944407822702180
 GameObject:
@@ -393,7 +395,7 @@ GameObject:
   - component: {fileID: 3621535077620156902}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
