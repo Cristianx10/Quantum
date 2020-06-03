@@ -1,7 +1,85 @@
 fileFormatVersion: 2
 guid: c776276e7ea2be043aa1d38c0518ce29
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7718184954680992173
+    second: cargapositiva_0
+  - first:
+      213: -7793430986303772703
+    second: cargapositiva_1
+  - first:
+      213: -3346598233025434958
+    second: cargapositiva_2
+  - first:
+      213: 3982800645680908242
+    second: cargapositiva_3
+  - first:
+      213: 2761670152859714373
+    second: cargapositiva_4
+  - first:
+      213: 4682911527059119664
+    second: cargapositiva_5
+  - first:
+      213: -1995622276220267647
+    second: cargapositiva_6
+  - first:
+      213: 8606060104914491120
+    second: cargapositiva_7
+  - first:
+      213: 2211542626377501473
+    second: cargapositiva_8
+  - first:
+      213: 4126790917428912831
+    second: cargapositiva_9
+  - first:
+      213: 3206903020556645646
+    second: cargapositiva_10
+  - first:
+      213: 2007976987793766459
+    second: cargapositiva_11
+  - first:
+      213: 3637054520206226714
+    second: cargapositiva_12
+  - first:
+      213: -4563400412411644223
+    second: cargapositiva_13
+  - first:
+      213: 794192602520117673
+    second: cargapositiva_14
+  - first:
+      213: 5843333285053615055
+    second: cargapositiva_15
+  - first:
+      213: 4382622234467440396
+    second: cargapositiva_16
+  - first:
+      213: -4774298824625388248
+    second: cargapositiva_17
+  - first:
+      213: 1681041999533082353
+    second: cargapositiva_18
+  - first:
+      213: -1399329957262773145
+    second: cargapositiva_19
+  - first:
+      213: -4653539081063486455
+    second: cargapositiva_20
+  - first:
+      213: -5944256522964311317
+    second: cargapositiva_21
+  - first:
+      213: -2543247849820505751
+    second: cargapositiva_22
+  - first:
+      213: -8163983302729884230
+    second: cargapositiva_23
+  - first:
+      213: 3443444289361013658
+    second: cargapositiva_24
+  - first:
+      213: -4974118772297040963
+    second: cargapositiva_25
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +118,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +148,567 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cargapositiva_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 7
+        width: 178
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a2084c25d70d04785a2077e1627fa8
+      internalID: 7718184954680992173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_1
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b9986198f52964d83430bef1db226c
+      internalID: -7793430986303772703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_2
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 7
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f0b7b5e7ed4444a8691d2bb1be227e
+      internalID: -3346598233025434958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_3
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33a67afdf53a0c4a8f7c5fcc1ad4a5b
+      internalID: 3982800645680908242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_4
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 7
+        width: 178
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670eea7152317c74ab84148e567460e4
+      internalID: 2761670152859714373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_5
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44feaa2b61aa6f94e839cca4cf799854
+      internalID: 4682911527059119664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_6
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 7
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3dcc863901041a4f85992aa15181260
+      internalID: -1995622276220267647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_7
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab8737e384f6b8499ef7ba845008a82
+      internalID: 8606060104914491120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_8
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8562317767cf440800752227fdcae7
+      internalID: 2211542626377501473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_9
+      rect:
+        serializedVersion: 2
+        x: 3095
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30155b1bb4c8c44daed2098dce7db99
+      internalID: 4126790917428912831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_10
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec5af202aba0414e8a18960e5c1e79d
+      internalID: 3206903020556645646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_11
+      rect:
+        serializedVersion: 2
+        x: 3767
+        y: 7
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b95a55ecdb9c9d429348757ea7c801a
+      internalID: 2007976987793766459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_12
+      rect:
+        serializedVersion: 2
+        x: 4101
+        y: 7
+        width: 175
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57d7a76c438cd143b1df1cc12f4a173
+      internalID: 3637054520206226714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_13
+      rect:
+        serializedVersion: 2
+        x: 4435
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a3f12efcccf9d42917b7fe9b111f0d
+      internalID: -4563400412411644223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_14
+      rect:
+        serializedVersion: 2
+        x: 4771
+        y: 7
+        width: 175
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848b9064f1c481b4ab870c21e6aad198
+      internalID: 794192602520117673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_15
+      rect:
+        serializedVersion: 2
+        x: 5106
+        y: 7
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e27104efc0df0746b9bc83c2940ef9d
+      internalID: 5843333285053615055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_16
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57582bf8658a89144b41d74203d17722
+      internalID: 4382622234467440396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_17
+      rect:
+        serializedVersion: 2
+        x: 5775
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327dd75b89d74ff4c928e7fe54eb82b7
+      internalID: -4774298824625388248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_18
+      rect:
+        serializedVersion: 2
+        x: 6110
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e7411f8b16b64438ee5cb551254cfb
+      internalID: 1681041999533082353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_19
+      rect:
+        serializedVersion: 2
+        x: 6446
+        y: 7
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb2cc91b149c1543b197d0290b567c3
+      internalID: -1399329957262773145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_20
+      rect:
+        serializedVersion: 2
+        x: 6782
+        y: 7
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d235a95db119dd745a9f9ba452fb32a9
+      internalID: -4653539081063486455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_21
+      rect:
+        serializedVersion: 2
+        x: 7115
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a824dedf590fc449b982110bdaafcf8
+      internalID: -5944256522964311317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_22
+      rect:
+        serializedVersion: 2
+        x: 7450
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc576081903a716418a61adab23d81cf
+      internalID: -2543247849820505751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_23
+      rect:
+        serializedVersion: 2
+        x: 7786
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc81723fde26f5b42953f84271ba7325
+      internalID: -8163983302729884230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_24
+      rect:
+        serializedVersion: 2
+        x: 8122
+        y: 7
+        width: 174
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f528eb029862b44196514d0a67ac924
+      internalID: 3443444289361013658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargapositiva_25
+      rect:
+        serializedVersion: 2
+        x: 8455
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771eb2c246ffbdf46b3ae930b02ed809
+      internalID: -4974118772297040963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
