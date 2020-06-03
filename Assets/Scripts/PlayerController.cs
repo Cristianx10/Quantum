@@ -228,8 +228,17 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        //luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
+        luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
         luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 200);
+
+        if (power > 0)
+        {
+            luz.color = Color.blue;
+        }
+        else
+        {
+            luz.color = Color.red;
+        }
 
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         anim.SetBool("Grounded", isGrounded);
@@ -304,9 +313,8 @@ public class PlayerController : MonoBehaviour
 
             PlayerController player = (PlayerController)players[i];
 
-            if (player != this)
+            if (player != this && player)
             {
-
                 Vector3 rel = player.transform.position;
                 Vector3 pos = transform.position;
 
