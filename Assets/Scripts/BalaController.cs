@@ -12,6 +12,9 @@ public class BalaController : MonoBehaviour
     bool eliminando = false;
 
     Vector3 randomVector;
+
+    public Vector3 refVector;
+    public bool isRefVector = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +45,10 @@ public class BalaController : MonoBehaviour
         else if (ramdom)
         {
             rb.AddForce(randomVector, ForceMode2D.Impulse);
+        }
+        else if (isRefVector)
+        {
+            rb.AddForce(refVector, ForceMode2D.Impulse);
         }
 
     }
@@ -77,7 +84,7 @@ public class BalaController : MonoBehaviour
         }
     }
 
-    
+
 
     IEnumerator Reset()
     {

@@ -13,9 +13,13 @@ public class goToScena : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D()
+    void OnCollisionEnter2D(Collider2D col)
     {
-        SceneManager.LoadScene(scena);
+        if (col.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(scena);
+
+        }
     }
 
 }

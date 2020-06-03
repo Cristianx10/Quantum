@@ -15,9 +15,25 @@ public class EnemyScript : MonoBehaviour
 
     private bool eliminando = false;
 
+    int timeForm = 0;
+
     void Start()
     {
         players = new ArrayList();
+
+
+
+        GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+
+        foreach (var gameObjectPlayer in gameObjectsPlayers)
+        {
+            PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
+            players.Add(player);
+        }
+
+
+
 
     }
 
@@ -27,42 +43,51 @@ public class EnemyScript : MonoBehaviour
 
 
         timer -= (Time.deltaTime);
+        timeForm = (int)(timer);
 
-        int timeForm = (int)(timer);
+
+
+
+
+    }
+
+    void FixedUpdate()
+    {
+        ataque();
+    }
+
+
+
+    void ataque()
+    {
 
         if (timeForm != temTimer)
         {
-            temTimer = timeForm;
-
-
-            Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-            Transform balaTrasnform = Instantiate(balaPrefact, initVector, Quaternion.identity);
-            BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
-            b.ramdom = true;
-
-
-        }
-
-
-
-
-        if (players.Count < 2)
-        {
-            GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
-
-            if (gameObjectsPlayers.Length >= 2)
+            for (int i = 0; i < players.Count; i++)
             {
 
-                foreach (var gameObjectPlayer in gameObjectsPlayers)
-                {
-                    PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
-                    players.Add(player);
+                PlayerController player = (PlayerController)players[i];
 
-                }
 
+                Vector3 rel = player.transform.position;
+                Vector3 pos = transform.position;
+
+                Vector3 heading = rel - pos;
+
+                float distance = heading.magnitude;
+                Vector3 direction = player.transform.position - pos; // This is now the normalized direction.
+
+                direction = direction.normalized;
+
+
+
+                temTimer = timeForm;
+                Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                Transform balaTrasnform = Instantiate(balaPrefact, initVector, Quaternion.identity);
+                BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
+                b.refVector = direction;
+                b.isRefVector = true;
             }
         }
-
-        
     }
 }
