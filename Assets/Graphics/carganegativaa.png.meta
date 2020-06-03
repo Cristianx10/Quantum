@@ -1,7 +1,94 @@
 fileFormatVersion: 2
 guid: b20f44bb9ad183e4085ed547d966f04a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1892182936087932673
+    second: carganegativaa_0
+  - first:
+      213: -6949563504497104652
+    second: carganegativaa_1
+  - first:
+      213: -1846955141426049466
+    second: carganegativaa_2
+  - first:
+      213: -1344753745829829403
+    second: carganegativaa_3
+  - first:
+      213: 4389916178124970792
+    second: carganegativaa_4
+  - first:
+      213: -6837794198063299706
+    second: carganegativaa_5
+  - first:
+      213: -6368353587988018957
+    second: carganegativaa_6
+  - first:
+      213: -3470231014248980188
+    second: carganegativaa_7
+  - first:
+      213: -1140088113193451247
+    second: carganegativaa_8
+  - first:
+      213: 2483966660375083501
+    second: carganegativaa_9
+  - first:
+      213: -283010160319221198
+    second: carganegativaa_10
+  - first:
+      213: 4957610816808618477
+    second: carganegativaa_11
+  - first:
+      213: -523426806399472351
+    second: carganegativaa_12
+  - first:
+      213: 1820830233709571743
+    second: carganegativaa_13
+  - first:
+      213: -7610334419920343432
+    second: carganegativaa_14
+  - first:
+      213: -7439618925076711639
+    second: carganegativaa_15
+  - first:
+      213: 2359622780381090765
+    second: carganegativaa_16
+  - first:
+      213: -8681855107517442164
+    second: carganegativaa_17
+  - first:
+      213: 6254321558253592303
+    second: carganegativaa_18
+  - first:
+      213: 6310485190514967955
+    second: carganegativaa_19
+  - first:
+      213: -3310410108209382284
+    second: carganegativaa_20
+  - first:
+      213: 5581036436813751443
+    second: carganegativaa_21
+  - first:
+      213: -1820993148531830645
+    second: carganegativaa_22
+  - first:
+      213: -43044077140678541
+    second: carganegativaa_23
+  - first:
+      213: 1344082820262916766
+    second: carganegativaa_24
+  - first:
+      213: -7896633978255574837
+    second: carganegativaa_25
+  - first:
+      213: 7950504303503920021
+    second: carganegativaa_26
+  - first:
+      213: 552559227078805858
+    second: carganegativaa_27
+  - first:
+      213: -802996548827190669
+    second: carganegativaa_28
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +171,616 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: carganegativaa_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 4
+        width: 201
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d1af6deaefea94198f3e962468c4f0
+      internalID: -1892182936087932673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_1
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 4
+        width: 188
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0731fe65903260479765c76684278a8
+      internalID: -6949563504497104652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 127
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368bea5ddd547dc44a7fd961d54b2be4
+      internalID: -1846955141426049466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_3
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 4
+        width: 195
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b74833660f775449bc58a3b1f1a61e1
+      internalID: -1344753745829829403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 7
+        width: 183
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c318fc4841ea0d8498e896428a348075
+      internalID: 4389916178124970792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_5
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bd0334b72d04a4bbabb9711d100c0e
+      internalID: -6837794198063299706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_6
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 7
+        width: 177
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06bfe33409a70346b3267ade7d8a2c8
+      internalID: -6368353587988018957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_7
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7259c7a908874f6439f9556186e8c4fd
+      internalID: -3470231014248980188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_8
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 7
+        width: 175
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158c8f1d5c8c1a946827580d41a3eb6e
+      internalID: -1140088113193451247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_9
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 7
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e7fa6c7c4c47e46a6571e60c9853bd
+      internalID: 2483966660375083501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_10
+      rect:
+        serializedVersion: 2
+        x: 3095
+        y: 7
+        width: 177
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491fcebb3554b6642a3a8ace934f31c7
+      internalID: -283010160319221198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_11
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 7
+        width: 176
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf79cac449092794b82cece5504ab0eb
+      internalID: 4957610816808618477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_12
+      rect:
+        serializedVersion: 2
+        x: 3767
+        y: 7
+        width: 175
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3585deea71f28aa4cac2bdc1242b2410
+      internalID: -523426806399472351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_13
+      rect:
+        serializedVersion: 2
+        x: 4101
+        y: 7
+        width: 175
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3a07cbdf6e00c43ad22c68f32148a6
+      internalID: 1820830233709571743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_14
+      rect:
+        serializedVersion: 2
+        x: 4435
+        y: 7
+        width: 177
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203c29bb0eb35b84da9d5638711697fc
+      internalID: -7610334419920343432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_15
+      rect:
+        serializedVersion: 2
+        x: 4771
+        y: 7
+        width: 175
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02350237cd674845bf254f2b2e832d7
+      internalID: -7439618925076711639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_16
+      rect:
+        serializedVersion: 2
+        x: 5107
+        y: 8
+        width: 176
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5c41db1dc8ddd47935a8c5875e0cb3
+      internalID: 2359622780381090765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_17
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 8
+        width: 176
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a52dbe2354e5d4fa0324320f78e0b0
+      internalID: -8681855107517442164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_18
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 8
+        width: 175
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bee016c4fc1934e9348f4af62fee1a
+      internalID: 6254321558253592303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_19
+      rect:
+        serializedVersion: 2
+        x: 6111
+        y: 8
+        width: 175
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a76328bb77c2542a5931aff23b31f2
+      internalID: 6310485190514967955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_20
+      rect:
+        serializedVersion: 2
+        x: 6447
+        y: 8
+        width: 175
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acac9f110f61d242a9f29d83fcf349e
+      internalID: -3310410108209382284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_21
+      rect:
+        serializedVersion: 2
+        x: 6783
+        y: 8
+        width: 173
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d26f60eb9b9d094cb660175f9a7c1d5
+      internalID: 5581036436813751443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_22
+      rect:
+        serializedVersion: 2
+        x: 7116
+        y: 7
+        width: 176
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8ab94ac12d8f94aa240625a2ff3186
+      internalID: -1820993148531830645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_23
+      rect:
+        serializedVersion: 2
+        x: 7451
+        y: 7
+        width: 176
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2805bd53462ae94a93ad52a86af3756
+      internalID: -43044077140678541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_24
+      rect:
+        serializedVersion: 2
+        x: 7786
+        y: 7
+        width: 176
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7602dd68ad9104c967df7a1a527b71
+      internalID: 1344082820262916766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_25
+      rect:
+        serializedVersion: 2
+        x: 8120
+        y: 7
+        width: 178
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dd99f0be5a3e94cac9521c613ea17e
+      internalID: -7896633978255574837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_26
+      rect:
+        serializedVersion: 2
+        x: 8456
+        y: 7
+        width: 176
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28803e388165124ba2f3e7c008c4178
+      internalID: 7950504303503920021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_27
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577d2ff33038b384782b8ae10ee806ad
+      internalID: 552559227078805858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carganegativaa_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 38
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabd7ae1867f07e4ca8dbc5566715b5f
+      internalID: -802996548827190669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
