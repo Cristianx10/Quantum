@@ -19,8 +19,9 @@ public class goToScena : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+            PlayerController player = col.gameObject.GetComponent<PlayerController>();
+            player.gano = true;
             dentro += 1;
-
             if (dentro >= judadores)
             {
                 SceneManager.LoadScene(scena);
@@ -33,6 +34,9 @@ public class goToScena : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+            PlayerController player = col.gameObject.GetComponent<PlayerController>();
+            player.gano = false;
+
             dentro -= 1;
         }
     }

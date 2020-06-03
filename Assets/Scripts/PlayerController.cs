@@ -73,6 +73,9 @@ public class PlayerController : MonoBehaviour
     public int vistaLeft = 3;
     public int vistaRight = 4;
 
+    public bool gano;
+    public bool perdio;
+
 
     public string scena = "";
 
@@ -189,12 +192,13 @@ public class PlayerController : MonoBehaviour
                 else
                 {
                     b.meshRenderer.material = b.balaRoja;
-                      power += 20;
+                    power += 20;
                 }
 
-                if(power > 200){
+                if (power > 200)
+                {
                     power = 200;
-                }   
+                }
 
                 b.typePlayer = "Player";
 
@@ -263,6 +267,9 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Grounded", isGrounded);
         anim.SetBool("Move", (moveLeft || moveRight));
         anim.SetBool("Disparo", isDisparo);
+        anim.SetBool("Gano", gano);
+        anim.SetBool("Perdio", perdio);
+
 
     }
 
@@ -405,7 +412,7 @@ public class PlayerController : MonoBehaviour
                         if (direction != null)
                         {
 
-                            float temMaxDistForce = map(Mathf.Abs(power), 0, 100, 0, maxDistForce);
+                            float temMaxDistForce = map(Mathf.Abs(power), 0, 200, 0, maxDistForce);
                             float fuerza = map(distance, 0, attractiveDistance, minDistForce, temMaxDistForce);
 
                             if (cargasDiferentes)
