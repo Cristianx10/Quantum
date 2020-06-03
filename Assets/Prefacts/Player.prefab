@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8030513888568363353}
   m_Layer: 0
   m_Name: Colision
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6832cab1af5244387242f7887fdf44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 8141016451318168644}
 --- !u!70 &8030513888568363353
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -102,7 +103,7 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 150
+  m_Intensity: 1.04
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
