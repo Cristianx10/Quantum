@@ -7,6 +7,7 @@ TagManager:
   - ground
   - from
   - to
+  - Enemigo
   layers:
   - Default
   - TransparentFX
@@ -52,4 +53,7 @@ TagManager:
     locked: 0
   - name: ObjectFront
     uniqueID: 820081719
+    locked: 0
+  - name: Enemigo
+    uniqueID: 3895486573
     locked: 0
