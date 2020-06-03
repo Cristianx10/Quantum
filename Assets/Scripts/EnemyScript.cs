@@ -9,6 +9,8 @@ public class EnemyScript : MonoBehaviour
     private ArrayList players;
     // Start is called before the first frame update
 
+    public float vida = 3;
+
 
     private float timer = 0;
     private float temTimer = 0;
@@ -40,14 +42,15 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         timer -= (Time.deltaTime);
         timeForm = (int)(timer);
 
 
-
-
+        //Muere el personaje
+        if (vida <= 0)
+        {
+            Destroy(this, 0);
+        }
 
     }
 

@@ -277,6 +277,11 @@ public class PlayerController : MonoBehaviour
         }
 
 
+        if (Mathf.Abs(power) <= 5)
+        {
+            Destroy(this, 0);
+        }
+
 
     }
 
