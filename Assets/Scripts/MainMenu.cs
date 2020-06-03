@@ -15,5 +15,7 @@ public void QuitGame(){
 public void Nextinslevel1(){
 SceneManager.LoadScene("Nivel");
 }
-
+public void Nextinslevel2(){
+SceneManager.LoadScene("Nivel2");
+}
 }
