@@ -184,11 +184,18 @@ public class PlayerController : MonoBehaviour
                 if (power > 0)
                 {
                     b.meshRenderer.material = b.balaAzul;
+                    power -= 20;
                 }
                 else
                 {
                     b.meshRenderer.material = b.balaRoja;
+                      power += 20;
                 }
+
+                if(power > 200){
+                    power = 200;
+                }   
+
                 b.typePlayer = "Player";
 
                 switch (vista)
