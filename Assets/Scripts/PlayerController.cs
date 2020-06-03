@@ -157,56 +157,59 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(kdisparo))
         {
-
-            Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-            float dist = 2F;
-
-            switch (vista)
+            if (isDisparo == false)
             {
-                case 1:
-                    initVector = new Vector3(transform.position.x, transform.position.y - dist, transform.position.z);
-                    break;
-                case 2:
-                    initVector = new Vector3(transform.position.x, transform.position.y + dist, transform.position.z);
-                    break;
-                case 3:
-                    initVector = new Vector3(transform.position.x - dist, transform.position.y, transform.position.z);
-                    break;
-                case 4:
-                    initVector = new Vector3(transform.position.x + dist, transform.position.y, transform.position.z);
-                    break;
-            }
+                Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                float dist = 2F;
 
-            Transform balaTrasnform = Instantiate(prefactBala, initVector, Quaternion.identity);
-            BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
-            b.myPlayer = this;
-            if (power > 0)
-            {
-                b.meshRenderer.material = b.balaAzul;
-            }
-            else
-            {
-                b.meshRenderer.material = b.balaRoja;
-            }
-            b.typePlayer = "Player";
+                switch (vista)
+                {
+                    case 1:
+                        initVector = new Vector3(transform.position.x, transform.position.y - dist, transform.position.z);
+                        break;
+                    case 2:
+                        initVector = new Vector3(transform.position.x, transform.position.y + dist, transform.position.z);
+                        break;
+                    case 3:
+                        initVector = new Vector3(transform.position.x - dist, transform.position.y, transform.position.z);
+                        break;
+                    case 4:
+                        initVector = new Vector3(transform.position.x + dist, transform.position.y, transform.position.z);
+                        break;
+                }
 
-            switch (vista)
-            {
-                case 1:
-                    b.up = true;
-                    break;
-                case 2:
-                    b.down = true;
-                    break;
-                case 3:
-                    b.left = true;
-                    break;
-                case 4:
-                    b.right = true;
-                    break;
-            }
+                Transform balaTrasnform = Instantiate(prefactBala, initVector, Quaternion.identity);
+                BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
+                b.myPlayer = this;
+                if (power > 0)
+                {
+                    b.meshRenderer.material = b.balaAzul;
+                }
+                else
+                {
+                    b.meshRenderer.material = b.balaRoja;
+                }
+                b.typePlayer = "Player";
 
-            isDisparo = true;
+                switch (vista)
+                {
+                    case 1:
+                        b.up = true;
+                        break;
+                    case 2:
+                        b.down = true;
+                        break;
+                    case 3:
+                        b.left = true;
+                        break;
+                    case 4:
+                        b.right = true;
+                        break;
+                }
+
+                isDisparo = true;
+                StartCoroutine(DisparoYa());
+            }
         }
 
 
@@ -242,11 +245,11 @@ public class PlayerController : MonoBehaviour
 
         if (power > 0)
         {
-            luz.color = new Color(0,0,1,0.2f);
+            luz.color = new Color(0, 0, 1, 0.2f);
         }
         else
         {
-            luz.color = new Color(1,0,0,0.2f);
+            luz.color = new Color(1, 0, 0, 0.2f);
         }
 
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
@@ -447,6 +450,12 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         isChangeOrientationMove = false;
+    }
+
+    IEnumerator DisparoYa()
+    {
+        yield return new WaitForSeconds(1);
+        isDisparo = false;
     }
 
     void ImpactAtraction(Vector3 direction)
