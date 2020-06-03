@@ -334,6 +334,11 @@ PrefabInstance:
       propertyPath: attractiveForce
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
+        type: 3}
+      propertyPath: power
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8141016451125739118, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_SortingOrder
@@ -848,6 +853,11 @@ PrefabInstance:
         type: 3}
       propertyPath: attractiveForce
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
+        type: 3}
+      propertyPath: power
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8141016451125739118, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
