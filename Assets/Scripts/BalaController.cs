@@ -13,6 +13,7 @@ public class BalaController : MonoBehaviour
 
     Vector3 randomVector;
 
+    public isEnemy
 
     public Vector3 refVector;
     public bool isRefVector = false;
@@ -61,7 +62,13 @@ public class BalaController : MonoBehaviour
             PlayerController player = col.gameObject.GetComponent<PlayerController>();
             if (player)
             {
-                player.power -= 10;
+                if (player.power > 0)
+                {
+                    player.power -= 10;
+
+                }else{
+                    player.power += 10;
+                }
             }
         }
 
@@ -83,7 +90,6 @@ public class BalaController : MonoBehaviour
     void OnBecameInvisible()
     {
         Eliminar();
-
     }
 
     void Eliminar()

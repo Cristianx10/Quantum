@@ -42,13 +42,11 @@ public class EnemyScript : MonoBehaviour
         timer -= (Time.deltaTime);
         timeForm = (int)(timer);
 
-
         //Muere el personaje
         if (vida <= 0)
         {
             Destroy(gameObject, 0);
         }
-
     }
 
     void FixedUpdate()
