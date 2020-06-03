@@ -596,7 +596,7 @@ public class PlayerController : MonoBehaviour
     float map(float n, float start1, float stop1, float start2, float stop2)
     {
         float value = ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
-        if (value >= stop1)
+        if (value >= stop2)
         {
             value = stop2;
         }
