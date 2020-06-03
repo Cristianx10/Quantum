@@ -696,12 +696,12 @@ PrefabInstance:
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.42
+      value: -6.91
       objectReference: {fileID: 0}
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.04
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
@@ -963,12 +963,12 @@ PrefabInstance:
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.67
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.5
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 8141016451318168664, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
@@ -1015,12 +1015,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8141016451125739118, guid: f403285dbec2c16489fe735cb99ed604,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -889739676950766307, guid: fb8d288a44837fb4488def70758ccd0e,
-        type: 3}
     - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: typePlayer
@@ -1031,6 +1025,12 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8141016451125739118, guid: f403285dbec2c16489fe735cb99ed604,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -889739676950766307, guid: fb8d288a44837fb4488def70758ccd0e,
+        type: 3}
     - target: {fileID: 8141016451125739119, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_Controller
