@@ -226,7 +226,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
+        //luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
         luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 200);
 
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
