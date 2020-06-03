@@ -74,6 +74,9 @@ public class PlayerController : MonoBehaviour
     public int vistaRight = 4;
 
 
+    public string scena = "";
+
+
     public Light luz;
 
     private float minLuz = 0;
@@ -284,6 +287,10 @@ public class PlayerController : MonoBehaviour
 
     public void Eliminar()
     {
+        if (scena != "")
+        {
+            Application.LoadLevel(scena);
+        }
         Destroy(gameObject, 0);
     }
 
@@ -591,7 +598,7 @@ public class PlayerController : MonoBehaviour
         float value = ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
         if (value >= stop1)
         {
-            value = stop1;
+            value = stop2;
         }
         return value;
     }
