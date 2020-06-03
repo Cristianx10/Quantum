@@ -179,6 +179,8 @@ public class PlayerController : MonoBehaviour
 
             Transform balaTrasnform = Instantiate(prefactBala, initVector, Quaternion.identity);
             BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
+            b.myPlayer = this;
+            b.typePlayer = "Player";
             switch (vista)
             {
                 case 1:
