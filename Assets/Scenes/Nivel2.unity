@@ -272,6 +272,11 @@ PrefabInstance:
       propertyPath: judadores
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 468283606452436396, guid: 6062ff083d188864f8c715c927ba171f,
+        type: 3}
+      propertyPath: scen
+      value: Nivel3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6062ff083d188864f8c715c927ba171f, type: 3}
 --- !u!1001 &1166534243
