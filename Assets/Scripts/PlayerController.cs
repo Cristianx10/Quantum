@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
     public Light luz;
 
     private float minLuz = 0;
-    private float maxLuz = 1.3f;
+    private float maxLuz = 1;
 
     // Start is called before the first frame update
     void Start()

@@ -4861,7 +4861,7 @@ MonoBehaviour:
   red: {fileID: 2100000, guid: 57ccdcdccde41d24c87783d278b05292, type: 2}
   renderSprite: {fileID: 3598831713158736800}
   particulas: {fileID: 4408011560301010277}
-  type: 1
+  type: 0
   renderer: {fileID: 0}
 --- !u!1 &6962521548993663628
 GameObject:
@@ -5006,8 +5006,8 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.92
-  m_Range: 3.84
+  m_Intensity: 1.8
+  m_Range: 5.465824
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
