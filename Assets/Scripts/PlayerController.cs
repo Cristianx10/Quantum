@@ -195,10 +195,6 @@ public class PlayerController : MonoBehaviour
                     power += 20;
                 }
 
-                if (power > 200)
-                {
-                    power = 200;
-                }
 
                 b.typePlayer = "Player";
 
@@ -223,6 +219,19 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+
+        if (Mathf.Abs(power) > 200)
+        {
+            if (power > 0)
+            {
+                power = 200;
+            }
+            else
+            {
+                power = -200;
+            }
+
+        }
 
 
 
