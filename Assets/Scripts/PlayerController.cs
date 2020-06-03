@@ -284,7 +284,7 @@ public class PlayerController : MonoBehaviour
 
     public void Eliminar()
     {
-        Destroy(this, 0);
+        Destroy(gameObject, 0);
     }
 
     void MagnetismoPlayers(bool changeOrientation)

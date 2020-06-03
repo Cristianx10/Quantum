@@ -23,10 +23,7 @@ public class EnemyScript : MonoBehaviour
     {
         players = new ArrayList();
 
-
-
         GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
-
 
         foreach (var gameObjectPlayer in gameObjectsPlayers)
         {
@@ -49,7 +46,7 @@ public class EnemyScript : MonoBehaviour
         //Muere el personaje
         if (vida <= 0)
         {
-            Destroy(this, 0);
+            Destroy(gameObject, 0);
         }
 
     }
