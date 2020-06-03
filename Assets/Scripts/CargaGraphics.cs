@@ -61,7 +61,7 @@ public class CargaGraphics : MonoBehaviour
 
     public IEnumerator Reset()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7);
         refDesaparecer.SetActive(true);
     }
 }
