@@ -6,11 +6,14 @@ public class Templar : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    Vector3 temPos;
+    Quaternion temRot;
     public bool temblar = false;
+
+    private int numRamdon = 0;
+
     void Start()
     {
-        temPos = transform.position;
+        temRot = transform.rotation;
     }
 
     // Update is called once per frame
@@ -18,12 +21,24 @@ public class Templar : MonoBehaviour
     {
         if (temblar)
         {
-            Vector3 randomVector = new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 5.0f), 0);
-            transform.position = randomVector;
+            numRamdon++;
+            numRamdon = (int)(map(Mathf.Cos(numRamdon), 0, 1, -20, 20));
+            Quaternion rand = new Quaternion(numRamdon, 0, 0, 0);
+            transform.rotation = rand;
         }
         else
         {
-            transform.position = temPos;
+            transform.rotation = temRot;
         }
+    }
+
+     float map(float n, float start1, float stop1, float start2, float stop2)
+    {
+        float value = ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
+        if (value >= stop2)
+        {
+            value = stop2;
+        }
+        return value;
     }
 }
