@@ -7,7 +7,7 @@ public class CargaScript : MonoBehaviour
 
     public GameObject refObject;
     public CargaGraphics carga;
-   
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,11 +24,27 @@ public class CargaScript : MonoBehaviour
             PlayerController player = col.gameObject.GetComponent<PlayerController>();
             if (carga.type == 0)
             {
-                player.power += 100;
+                if (player.power < 0)
+                {
+                    player.power = Mathf.Abs(player.power) + 100;
+                }
+                else
+                {
+                    player.power += 100;
+                }
+
             }
             else
             {
-                player.power -= 100;
+                if (player.power > 0)
+                {
+                    player.power = -Mathf.Abs(player.power) - 100;
+                }
+                else
+                {
+                    player.power -= 100;
+                }
+                //  player.power -= 100;
             }
 
             Debug.Log("Eliminar");
