@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a387a1b20e1ed714eb2474e1aca79b5b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,6 +111,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1644437407738479710}
   obj: {fileID: 5708972818885655972}
+  left: 0
+  right: 0
+  up: 0
+  down: 0
+  ramdom: 0
+  myPlayer: {fileID: 0}
+  typePlayer: 
+  myEnemy: {fileID: 0}
+  refVector: {x: 0, y: 0, z: 0}
+  isRefVector: 0
+  balaRoja: {fileID: 2100000, guid: 17adbfcd91d045341b24f99d0a999587, type: 2}
+  balaAzul: {fileID: 2100000, guid: a387a1b20e1ed714eb2474e1aca79b5b, type: 2}
+  meshRenderer: {fileID: 4978108401308460453}
 --- !u!50 &1644437407738479710
 Rigidbody2D:
   serializedVersion: 4
