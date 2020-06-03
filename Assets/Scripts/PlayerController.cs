@@ -473,11 +473,7 @@ public class PlayerController : MonoBehaviour
 
     void ImpactAtraction(Vector3 direction)
     {
-<<<<<<< HEAD
-        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 20, ForceMode2D.Impulse);
-=======
-        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 2, ForceMode2D.Impulse);
->>>>>>> b2f7ae6e58d4ed11d6f35428ddb713aa33d4032e
+        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 4, ForceMode2D.Impulse);
         keySpace = false;
     }
 
