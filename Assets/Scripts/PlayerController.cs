@@ -233,11 +233,11 @@ public class PlayerController : MonoBehaviour
 
         if (power > 0)
         {
-            luz.color = Color.blue;
+            luz.color = new Color(72, 107, 165);
         }
         else
         {
-            luz.color = Color.red;
+            luz.color = new Color(240, 78, 34);
         }
 
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
