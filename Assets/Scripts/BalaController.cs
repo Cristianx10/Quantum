@@ -13,6 +13,9 @@ public class BalaController : MonoBehaviour
 
     Vector3 randomVector;
 
+    public PlayerController myPlayer;
+    public string typePlayer = "";
+    public EnemyScript myEnemy;
 
     public Vector3 refVector;
     public bool isRefVector = false;
@@ -59,16 +62,23 @@ public class BalaController : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             PlayerController player = col.gameObject.GetComponent<PlayerController>();
-            if (player)
+            if (player != myPlayer && this.typePlayer != "Player")
             {
-                player.power -= 10;
+                if (player.power > 0)
+                {
+                    player.power -= 10;
+                }
+                else
+                {
+                    player.power += 10;
+                }
             }
         }
 
         if (col.gameObject.tag == "Enemigo")
         {
             EnemyScript enemigo = col.gameObject.GetComponent<EnemyScript>();
-            if (enemigo)
+            if (enemigo != myEnemy && this.typePlayer != "Enemigo")
             {
                 enemigo.vida -= 1;
             }
@@ -83,7 +93,6 @@ public class BalaController : MonoBehaviour
     void OnBecameInvisible()
     {
         Eliminar();
-
     }
 
     void Eliminar()

@@ -42,13 +42,11 @@ public class EnemyScript : MonoBehaviour
         timer -= (Time.deltaTime);
         timeForm = (int)(timer);
 
-
         //Muere el personaje
         if (vida <= 0)
         {
             Destroy(gameObject, 0);
         }
-
     }
 
     void FixedUpdate()
@@ -86,6 +84,8 @@ public class EnemyScript : MonoBehaviour
                     Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
                     Transform balaTrasnform = Instantiate(balaPrefact, initVector, Quaternion.identity);
                     BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
+                    b.myEnemy = this;
+                    b.typePlayer = "Enemigo";
                     b.refVector = direction;
                     b.isRefVector = true;
                 }
