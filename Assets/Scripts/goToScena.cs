@@ -24,7 +24,7 @@ public class goToScena : MonoBehaviour
             dentro += 1;
             if (dentro >= judadores)
             {
-                SceneManager.LoadScene(scena);
+                StartCoroutine(GO());
             }
 
         }
@@ -39,6 +39,13 @@ public class goToScena : MonoBehaviour
 
             dentro -= 1;
         }
+    }
+
+
+    IEnumerator GO()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(scena);
     }
 
 }
