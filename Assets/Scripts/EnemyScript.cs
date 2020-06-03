@@ -32,8 +32,6 @@ public class EnemyScript : MonoBehaviour
         }
 
 
-
-
     }
 
     // Update is called once per frame
@@ -77,8 +75,6 @@ public class EnemyScript : MonoBehaviour
                     Vector3 direction = player.transform.position - pos; // This is now the normalized direction.
 
                     direction = direction.normalized;
-
-
 
                     temTimer = timeForm;
                     Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
