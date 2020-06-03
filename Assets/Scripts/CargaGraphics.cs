@@ -12,6 +12,10 @@ public class CargaGraphics : MonoBehaviour
     public Material blue;
     public Material red;
 
+    public GameObject luzObject;
+
+    public Light luz;
+
 
     public SpriteRenderer renderSprite;
 
@@ -25,6 +29,8 @@ public class CargaGraphics : MonoBehaviour
     {
         renderer = refGameObject.GetComponent<Renderer>();
 
+        luz = luzObject.GetComponent<Light>();
+
     }
 
     // Update is called once per frame
@@ -35,11 +41,13 @@ public class CargaGraphics : MonoBehaviour
             renderer.material = blue;
             particulas.startColor = Color.blue;
             renderSprite.color = Color.blue;
+            luz.color = Color.blue;
         }
         else
         {
             renderSprite.color = Color.red;
             renderer.material = red;
+            luz.color = Color.red;
         }
 
     }

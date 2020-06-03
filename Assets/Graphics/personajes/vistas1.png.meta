@@ -1,7 +1,49 @@
 fileFormatVersion: 2
 guid: 7b9f14314da6e7243963a3f4ea21a30a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5769219853770511384
+    second: vistas1_0
+  - first:
+      213: 110265859225201762
+    second: vistas1_1
+  - first:
+      213: -5578326879294060078
+    second: vistas1_2
+  - first:
+      213: 8911160039178108003
+    second: vistas1_3
+  - first:
+      213: 3623615607017468850
+    second: vistas1_4
+  - first:
+      213: 4685117357506936105
+    second: vistas1_5
+  - first:
+      213: -2536270796505515942
+    second: vistas1_6
+  - first:
+      213: -8221815258771480321
+    second: vistas1_7
+  - first:
+      213: -2618720871332941554
+    second: vistas1_8
+  - first:
+      213: -9185495577122433799
+    second: vistas1_9
+  - first:
+      213: 1754889802453224260
+    second: vistas1_10
+  - first:
+      213: -6999729841859062229
+    second: vistas1_11
+  - first:
+      213: -7659885156150226620
+    second: vistas1_12
+  - first:
+      213: 622113417734591794
+    second: vistas1_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +82,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +112,339 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: vistas1_0
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1046
+        width: 523
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061de3625dd86b046b561e48476fd319
+      internalID: 5769219853770511384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_1
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1046
+        width: 523
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d39b5b01dd1c8c4ea9028d8d73e5336
+      internalID: 110265859225201762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_2
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 1046
+        width: 523
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e799e287cce69344a297b9a10789847
+      internalID: -5578326879294060078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_3
+      rect:
+        serializedVersion: 2
+        x: 2787
+        y: 1046
+        width: 522
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13711d58a8fdfb43a26bd9932cda4ee
+      internalID: 8911160039178108003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_4
+      rect:
+        serializedVersion: 2
+        x: 3642
+        y: 1046
+        width: 548
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d4ff6ccf1a3cf4688443c22d030f2c
+      internalID: 3623615607017468850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_5
+      rect:
+        serializedVersion: 2
+        x: 4543
+        y: 1046
+        width: 484
+        height: 666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d85a8a2c71c63941a439954ab8ff658
+      internalID: 4685117357506936105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_6
+      rect:
+        serializedVersion: 2
+        x: 5327
+        y: 1046
+        width: 652
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa913ad55a55844a94e1c369087ec6b
+      internalID: -2536270796505515942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_7
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 225
+        width: 409
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dae2a766e057a4bb8f0bfd01acea13
+      internalID: -8221815258771480321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_8
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 225
+        width: 411
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76391514ed7d15f4c9fe4ebfc9747a15
+      internalID: -2618720871332941554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_9
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 225
+        width: 410
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dedf31c87ed3df46a35e4d932130dfa
+      internalID: -9185495577122433799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_10
+      rect:
+        serializedVersion: 2
+        x: 2858
+        y: 225
+        width: 445
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666f02040fc567d478b78226988c62c6
+      internalID: 1754889802453224260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_11
+      rect:
+        serializedVersion: 2
+        x: 3786
+        y: 225
+        width: 388
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27efb5ed443da8d4885974dcc2cfe97d
+      internalID: -6999729841859062229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_12
+      rect:
+        serializedVersion: 2
+        x: 4660
+        y: 225
+        width: 432
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7649ab11873a0e4c8dd96e5691684c6
+      internalID: -7659885156150226620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vistas1_13
+      rect:
+        serializedVersion: 2
+        x: 5569
+        y: 225
+        width: 410
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53e1ee0e4f992244b0beb72b1c57bb1
+      internalID: 622113417734591794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

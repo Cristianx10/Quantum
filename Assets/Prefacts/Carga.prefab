@@ -4859,6 +4859,8 @@ MonoBehaviour:
   refDesaparecer: {fileID: 8042931355693247454}
   blue: {fileID: 2100000, guid: d6ca7eab15977194e82b85241031be5a, type: 2}
   red: {fileID: 2100000, guid: 57ccdcdccde41d24c87783d278b05292, type: 2}
+  luzObject: {fileID: 7046010879716310473}
+  luz: {fileID: 0}
   renderSprite: {fileID: 3598831713158736800}
   particulas: {fileID: 4408011560301010277}
   type: 0
