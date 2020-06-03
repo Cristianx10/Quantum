@@ -76,10 +76,11 @@ public class PlayerController : MonoBehaviour
     public bool gano;
     public bool perdio;
 
+    private bool isRepulsion = false;
 
     public string scena = "";
 
-    public GameObject explosion;
+    public Transform explosion;
 
 
     public Light luz;
@@ -235,6 +236,10 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.Space) && isRepulsion)
+        {
+            keySpace = true;
+        }
 
 
         if (Input.GetKeyDown(left))
@@ -263,7 +268,7 @@ public class PlayerController : MonoBehaviour
 
 
         luz.intensity = map(Mathf.Abs(this.power), 0, 200, minLuz, maxLuz);
-        luz.range = map(Mathf.Abs(this.power), 0, 200, 10, 15)/0.4f;
+        luz.range = map(Mathf.Abs(this.power), 0, 200, 10, 15) / 0.4f;
 
         if (power > 0)
         {
@@ -280,8 +285,6 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Disparo", isDisparo);
         anim.SetBool("Gano", gano);
         anim.SetBool("Perdio", perdio);
-
-
     }
 
     void FixedUpdate()
@@ -376,14 +379,12 @@ public class PlayerController : MonoBehaviour
 
                 if (distance < attractiveDistance && (cargasDiferentes))
                 {
-
+                    isRepulsion = true;
                     if (!isChangeOrientationMove)
                     {
 
-                        if (Input.GetKeyDown(KeyCode.Space))
-                        {
-                            keySpace = true;
-                        }
+
+
 
                         if (player.keySpace && keySpace)
                         {
@@ -446,6 +447,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
+                    isRepulsion = false;
                     player.isChangeOrientationMove = false;
                     player.colliderWall = false;
                     player.orientacion = 1;
@@ -484,8 +486,15 @@ public class PlayerController : MonoBehaviour
 
     void ImpactAtraction(Vector3 direction)
     {
-        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 4, ForceMode2D.Impulse);
         keySpace = false;
+        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 4, ForceMode2D.Impulse);
+        createEffect();
+    }
+
+    void createEffect()
+    {
+        Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        Transform balaTrasnform = Instantiate(explosion, initVector, Quaternion.identity);
     }
 
     void ConfigOrientation()

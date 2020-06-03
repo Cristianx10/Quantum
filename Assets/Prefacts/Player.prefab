@@ -384,6 +384,8 @@ MonoBehaviour:
   gano: 0
   perdio: 0
   scena: 
+  explosion: {fileID: 1938553020582561425, guid: cb30319b890e9bd4eb9b8fc15a969942,
+    type: 3}
   luz: {fileID: 2526263390106249880}
 --- !u!1 &8950944407822702180
 GameObject:
