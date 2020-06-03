@@ -262,8 +262,8 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
-        luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 15);
+        luz.intensity = map(Mathf.Abs(this.power), 0, 200, minLuz, maxLuz);
+        luz.range = map(Mathf.Abs(this.power), 0, 200, 10, 15)/0.4f;
 
         if (power > 0)
         {
@@ -484,7 +484,7 @@ public class PlayerController : MonoBehaviour
 
     void ImpactAtraction(Vector3 direction)
     {
-        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 2, ForceMode2D.Impulse);
+        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 4, ForceMode2D.Impulse);
         keySpace = false;
     }
 

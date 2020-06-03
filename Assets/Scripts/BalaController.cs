@@ -90,7 +90,7 @@ public class BalaController : MonoBehaviour
         }
 
 
-        if (col.gameObject.tag == "Grounded")
+        if (col.gameObject.tag == "ground")
         {
             Eliminar();
         }
