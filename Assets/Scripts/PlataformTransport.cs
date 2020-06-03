@@ -60,7 +60,7 @@ public class PlataformTransport : MonoBehaviour
                 GameObject playerG = gameObjectPlayer;
                 if (playerG)
                 {
-                    playerG.transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+                    playerG.transform.position = new Vector3(transform.position.x, transform.position.y + 1, playerG.transform.position.z);
                 }
             }
 

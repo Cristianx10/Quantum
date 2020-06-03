@@ -8,6 +8,7 @@ TagManager:
   - from
   - to
   - Enemigo
+  - Playerc
   layers:
   - Default
   - TransparentFX
