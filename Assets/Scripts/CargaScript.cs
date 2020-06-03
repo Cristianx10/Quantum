@@ -23,7 +23,7 @@ public class CargaScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
 
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Playerc")
         {
             PlayerBoxCollider box = col.gameObject.GetComponent<PlayerBoxCollider>();
             if (carga.type == 0)

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8030513888568363353}
   m_Layer: 0
   m_Name: Colision
-  m_TagString: Player
+  m_TagString: Playerc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -371,6 +371,7 @@ MonoBehaviour:
   forceImpactA: 2
   forceImpactB: 1.5
   minDistForce: 10
+  maxDistForce: 40
   dis: 0
   prefactBala: {fileID: 6373198338630257395, guid: fa9c7b16c4639564ba17e406f92e7277,
     type: 3}
@@ -380,6 +381,8 @@ MonoBehaviour:
   vistaDown: 2
   vistaLeft: 3
   vistaRight: 4
+  gano: 0
+  perdio: 0
   scena: 
   luz: {fileID: 2526263390106249880}
 --- !u!1 &8950944407822702180

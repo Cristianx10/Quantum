@@ -51,25 +51,25 @@ public class PlataformTransport : MonoBehaviour
         if (active && col.gameObject.tag == "Player")
         {
 
-        }
 
-        GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
+            GameObject currentPlayer = col.gameObject;
+            GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
 
-
-
-        foreach (var gameObjectPlayer in gameObjectsPlayers)
-        {
-            PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
-
-            if (player != this && player)
+            foreach (var gameObjectPlayer in gameObjectsPlayers)
             {
-                active = false;
-                target.active = false;
-                col.gameObject.transform.position = new Vector3(target.transform.position.x, target.transform.position.y + 3, target.transform.position.z);
-                StartCoroutine(Reset());
+                GameObject playerG = gameObjectPlayer;
+                if (playerG)
+                {
+                    playerG.transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+                }
             }
 
+            active = false;
+            target.active = false;
+            StartCoroutine(Reset());
+
         }
+
 
 
 

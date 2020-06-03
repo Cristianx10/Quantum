@@ -14,7 +14,6 @@ public class PlayerInterfacePower : MonoBehaviour
     void Start()
     {
         player = GetComponentInParent<PlayerController>();
-
     }
 
     // Update is called once per frame
