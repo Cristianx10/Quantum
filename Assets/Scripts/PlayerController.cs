@@ -279,10 +279,15 @@ public class PlayerController : MonoBehaviour
 
         if (Mathf.Abs(power) <= 5)
         {
-            Destroy(this, 0);
+            Eliminar();
         }
 
 
+    }
+
+    public void Eliminar()
+    {
+        Destroy(this, 0);
     }
 
     void MagnetismoPlayers(bool changeOrientation)
