@@ -73,6 +73,7 @@ public class BalaController : MonoBehaviour
                     player.power += 10;
                 }
             }
+            Eliminar();
         }
 
         if (col.gameObject.tag == "Enemigo")
@@ -84,7 +85,7 @@ public class BalaController : MonoBehaviour
             }
         }
 
-        Eliminar();
+
 
 
     }
