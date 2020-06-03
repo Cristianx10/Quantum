@@ -49,7 +49,7 @@ public class PlataformTransport : MonoBehaviour
         {
             active = false;
             target.active = false;
-            col.gameObject.transform.position = target.transform.position;
+            col.gameObject.transform.position = new Vector3(target.transform.position.x, target.transform.position.y + 3, target.transform.position.z );
             StartCoroutine(Reset());
         }
     }
