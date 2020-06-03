@@ -274,7 +274,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Mathf.Abs(power) <= 5)
+        if (Mathf.Abs(power) <= 11)
         {
             Eliminar();
         }
