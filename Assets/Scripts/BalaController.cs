@@ -13,6 +13,7 @@ public class BalaController : MonoBehaviour
 
     Vector3 randomVector;
 
+
     public Vector3 refVector;
     public bool isRefVector = false;
     // Start is called before the first frame update
