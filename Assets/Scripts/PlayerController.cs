@@ -374,6 +374,12 @@ public class PlayerController : MonoBehaviour
                             keySpace = true;
                         }
 
+                        if (player.keySpace && keySpace)
+                        {
+                            ImpactAtraction(dir2);
+                            player.ImpactAtraction(dir1);
+                        }
+
                         if (colliderWall && player.isGrounded && !isJumped && !player.isJumped)
                         {
                             if (direction.y >= .9)
@@ -435,14 +441,7 @@ public class PlayerController : MonoBehaviour
 
                 }
 
-                if (keySpace)
-                {
-                    keySpace = false;
-                    // this.ImpactAtraction(dir2);
-                    player.ImpactAtraction(dir1);
 
-
-                }
 
             }
 
@@ -474,7 +473,7 @@ public class PlayerController : MonoBehaviour
 
     void ImpactAtraction(Vector3 direction)
     {
-        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 50, ForceMode2D.Impulse);
+        rb.AddForce((new Vector3(direction.x, direction.y, direction.z)) * jumpForce * 2, ForceMode2D.Impulse);
         keySpace = false;
     }
 
