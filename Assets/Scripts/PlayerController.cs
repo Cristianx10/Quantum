@@ -252,15 +252,15 @@ public class PlayerController : MonoBehaviour
 
 
         luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
-        luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 200);
+        luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 15);
 
         if (power > 0)
         {
-            luz.color = new Color(0, 0, 1, 0.2f);
+            luz.color = new Color(0, 0, 1, 0.3f);
         }
         else
         {
-            luz.color = new Color(1, 0, 0, 0.2f);
+            luz.color = new Color(1, 0, 0, 0.3f);
         }
 
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
