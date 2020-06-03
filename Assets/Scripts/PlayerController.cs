@@ -310,7 +310,7 @@ public class PlayerController : MonoBehaviour
 
 
                 //cargasDiferentes = true;
-                
+
 
                 if (distance < attractiveDistance && (cargasDiferentes))
                 {
@@ -579,8 +579,13 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    float map(float n, float start1, float stop1, float start2, float stop2)
+    float map(float n, float start1, float stop1, float start2, float stop2, float limited)
     {
-        return ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
+        float value = ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
+        if (value >= stop1)
+        {
+            value = stop1;
+        }
+        return value;
     }
 }
