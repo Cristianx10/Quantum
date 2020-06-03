@@ -252,6 +252,7 @@ public class PlayerController : MonoBehaviour
         // anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         anim.SetBool("Grounded", isGrounded);
         anim.SetBool("Move", (moveLeft || moveRight));
+        anim.SetBool("Disparo", isDisparo);
 
     }
 
