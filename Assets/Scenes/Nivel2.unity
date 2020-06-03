@@ -361,6 +361,11 @@ PrefabInstance:
       propertyPath: power
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
+        type: 3}
+      propertyPath: scena
+      value: Nivel2
+      objectReference: {fileID: 0}
     - target: {fileID: 8141016451125739118, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}
       propertyPath: m_Sprite
@@ -1192,6 +1197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: power
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141016451318168644, guid: f403285dbec2c16489fe735cb99ed604,
+        type: 3}
+      propertyPath: scena
+      value: Nivel2
       objectReference: {fileID: 0}
     - target: {fileID: 8141016451125739118, guid: f403285dbec2c16489fe735cb99ed604,
         type: 3}

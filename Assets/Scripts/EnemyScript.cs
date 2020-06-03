@@ -57,7 +57,7 @@ public class EnemyScript : MonoBehaviour
     void ataque()
     {
 
-        if (timeForm != temTimer)
+        if (timeForm != temTimer && timeForm % 2 == 0)
         {
             for (int i = 0; i < players.Count; i++)
             {
@@ -77,7 +77,7 @@ public class EnemyScript : MonoBehaviour
                     direction = direction.normalized;
 
                     temTimer = timeForm;
-                    Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                    Vector3 initVector = new Vector3(transform.position.x, transform.position.y+1, transform.position.z);
                     Transform balaTrasnform = Instantiate(balaPrefact, initVector, Quaternion.identity);
                     BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
                     b.myEnemy = this;

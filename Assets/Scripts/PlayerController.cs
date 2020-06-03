@@ -260,8 +260,8 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        luz.intensity = map(Mathf.Abs(this.power), 0, 100, minLuz, maxLuz);
-        luz.range = map(Mathf.Abs(this.power), 0, 100, 10, 15);
+        luz.intensity = map(Mathf.Abs(this.power), 0, 200, minLuz, maxLuz);
+        luz.range = map(Mathf.Abs(this.power), 0, 200, 10, 15)/0.4f;
 
         if (power > 0)
         {
