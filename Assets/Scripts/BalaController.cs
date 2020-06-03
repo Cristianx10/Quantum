@@ -19,6 +19,9 @@ public class BalaController : MonoBehaviour
 
     public Vector3 refVector;
     public bool isRefVector = false;
+
+    public Material balaRoja, balaAzul;
+    public MeshRenderer meshRenderer;
     // Start is called before the first frame update
     void Start()
     {

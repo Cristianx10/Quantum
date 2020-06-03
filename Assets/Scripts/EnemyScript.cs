@@ -85,9 +85,43 @@ public class EnemyScript : MonoBehaviour
                     b.refVector = direction;
                     b.isRefVector = true;
                 }
+            }
+        }
+    }
 
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            PlayerController player = col.gameObject.GetComponent<PlayerController>();
+            if (player)
+            {
+                if (player.power > 0)
+                {
+                    player.power -= 10;
+                }
+                else
+                {
+                    player.power += 10;
+                }
+
+
+                Vector3 rel = player.transform.position;
+                Vector3 pos = transform.position;
+
+                Vector3 heading = rel - pos;
+
+                float distance = heading.magnitude;
+                Vector3 direction = player.transform.position - pos; // This is now the normalized direction.
+
+                direction = direction.normalized;
+
+                Vector3 dir2 = new Vector3(direction.x, direction.y, direction.z);
+
+                player.rb.AddForce(dir2 * 3);
 
             }
+
         }
     }
 }
