@@ -49,6 +49,7 @@ public class CheckGrounded : MonoBehaviour
         player.transform.position = new Vector3(13, -2, 0);*/
 
         player.Eliminar();
+      //  Application.LoadLevel("HighScore");
     }
     
 }

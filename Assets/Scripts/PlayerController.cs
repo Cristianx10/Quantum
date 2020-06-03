@@ -260,9 +260,6 @@ public class PlayerController : MonoBehaviour
         }
 
 
-
-
-
         MoveHorizontalForce();
         // MoveHorizontal();
 

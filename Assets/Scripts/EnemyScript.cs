@@ -71,25 +71,29 @@ public class EnemyScript : MonoBehaviour
 
                 PlayerController player = (PlayerController)players[i];
 
+                if (player)
+                {
+                    Vector3 rel = player.transform.position;
+                    Vector3 pos = transform.position;
 
-                Vector3 rel = player.transform.position;
-                Vector3 pos = transform.position;
+                    Vector3 heading = rel - pos;
 
-                Vector3 heading = rel - pos;
+                    float distance = heading.magnitude;
+                    Vector3 direction = player.transform.position - pos; // This is now the normalized direction.
 
-                float distance = heading.magnitude;
-                Vector3 direction = player.transform.position - pos; // This is now the normalized direction.
-
-                direction = direction.normalized;
+                    direction = direction.normalized;
 
 
 
-                temTimer = timeForm;
-                Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-                Transform balaTrasnform = Instantiate(balaPrefact, initVector, Quaternion.identity);
-                BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
-                b.refVector = direction;
-                b.isRefVector = true;
+                    temTimer = timeForm;
+                    Vector3 initVector = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                    Transform balaTrasnform = Instantiate(balaPrefact, initVector, Quaternion.identity);
+                    BalaController b = balaTrasnform.GetComponentInChildren<BalaController>();
+                    b.refVector = direction;
+                    b.isRefVector = true;
+                }
+
+
             }
         }
     }
