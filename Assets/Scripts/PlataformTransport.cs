@@ -46,11 +46,8 @@ public class PlataformTransport : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
 
-
-
         if (active && col.gameObject.tag == "Player")
         {
-
 
             GameObject currentPlayer = col.gameObject;
             GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");

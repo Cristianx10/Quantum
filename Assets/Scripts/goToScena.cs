@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class goToScena : MonoBehaviour
 {
 
-    public string scena;
+    public string scen = "";
     public int judadores = 1;
-    private int dentro = 0;
+    public int dentro = 0;
     // Start is called before the first frame update
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" || col.gameObject.tag == "Playerc")
         {
             PlayerController player = col.gameObject.GetComponent<PlayerController>();
             player.gano = true;
@@ -38,10 +38,25 @@ public class goToScena : MonoBehaviour
     }
 
 
+
+
     IEnumerator GO()
     {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(scena);
+        Debug.Log(scen);
+
+        GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+        foreach (var gameObjectPlayer in gameObjectsPlayers)
+        {
+            PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
+            if (player)
+            {
+                player.perdio = true;
+            }
+        }
+
+        SceneManager.LoadScene(scen);
     }
 
 }

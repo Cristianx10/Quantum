@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerController : MonoBehaviour
@@ -74,7 +75,7 @@ public class PlayerController : MonoBehaviour
     public int vistaRight = 4;
 
     public bool gano;
-    public bool perdio;
+    public bool perdio = false;
 
     private bool isRepulsion = false;
 
@@ -284,7 +285,7 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Move", (moveLeft || moveRight));
         anim.SetBool("Disparo", isDisparo);
         anim.SetBool("Gano", gano);
-        anim.SetBool("Perdio", perdio);
+        //anim.SetBool("Perdio", perdio);
     }
 
     void FixedUpdate()
@@ -339,9 +340,9 @@ public class PlayerController : MonoBehaviour
 
     public void Eliminar()
     {
-        if (scena != "")
+        if (scena != "" && !perdio)
         {
-            Application.LoadLevel(scena);
+            SceneManager.LoadScene(scena);
         }
         Destroy(gameObject, 0);
     }
