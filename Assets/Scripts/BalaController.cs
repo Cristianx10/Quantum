@@ -85,8 +85,9 @@ public class BalaController : MonoBehaviour
             if (enemigo != myEnemy && this.typePlayer != "Enemigo")
             {
                 enemigo.vida -= 1;
+                Eliminar();
             }
-            Eliminar();
+
         }
 
 
