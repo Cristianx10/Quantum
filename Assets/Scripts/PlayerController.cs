@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
     public float minDistForce = 10;
 
-    private float maxDistForce = 40;
+    public float maxDistForce = 40;
 
 
     public float dis = 0;
