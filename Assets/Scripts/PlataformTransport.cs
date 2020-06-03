@@ -65,7 +65,10 @@ public class PlataformTransport : MonoBehaviour
             }
 
             active = false;
+            if(target){
+
             target.active = false;
+            }
             StartCoroutine(Reset());
 
         }
