@@ -45,13 +45,34 @@ public class PlataformTransport : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+
+
+
         if (active && col.gameObject.tag == "Player")
         {
-            active = false;
-            target.active = false;
-            col.gameObject.transform.position = new Vector3(target.transform.position.x, target.transform.position.y + 3, target.transform.position.z );
-            StartCoroutine(Reset());
+
         }
+
+        GameObject[] gameObjectsPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+
+
+        foreach (var gameObjectPlayer in gameObjectsPlayers)
+        {
+            PlayerController player = gameObjectPlayer.GetComponent<PlayerController>();
+
+            if (player != this && player)
+            {
+                active = false;
+                target.active = false;
+                col.gameObject.transform.position = new Vector3(target.transform.position.x, target.transform.position.y + 3, target.transform.position.z);
+                StartCoroutine(Reset());
+            }
+
+        }
+
+
+
     }
 
     IEnumerator Reset()
