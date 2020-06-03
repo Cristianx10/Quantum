@@ -86,6 +86,14 @@ public class BalaController : MonoBehaviour
             {
                 enemigo.vida -= 1;
             }
+            Eliminar();
+        }
+
+
+
+        if (col.gameObject.tag == "Grounded")
+        {
+            Eliminar();
         }
 
 
